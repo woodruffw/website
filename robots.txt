@@ -1,0 +1,3 @@
+#fuck you, don't crawl my website
+User-agent: *
+Disallow: /

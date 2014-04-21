@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Services</title>
+	<style type="text/css">
+		body
+		{
+			font-family: "Times New Roman", Georgia, Serif;
+		}
+
+		p
+		{
+			position: relative;
+			top: -10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<a href="/realsite/index.html">Home</a>
+	</div>
+
+	<h1>Services and Utilities</h1>
+	<p>
+	Here are some services and utilities that I offer to the public. <br>
+	Don't spam them, or I'll come after you.
+	</p>
+
+	<h2>Services</h2>
+
+	<h3>Public Access Unix</h3>
+	<p>
+	To request an account in advance (comes with (S)FTP access too!): <br>
+	</p>
+	<form name="register" onsubmit="return validatePAForm()" action="/realsite/cgi-bin/services/account-request.cgi" method="POST">
+		Username: <input id="pausername" type="text" name="pausername" maxlength="10"> <br>
+		Password: <input type="password" name="papassword"> <br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<h3>Public BBS/Forums</h3>
+	<p>
+	In planning.
+	</p>
+
+	<h3>Personal Pages</h3>
+	<p>
+	In planning. <br>
+	</p>
+
+	<h2>Utilities</h2>
+
+	<h3>NYC DOE Attendance Checker</h3>
+	<p>
+	Checks the attendance for a given school (school name <b>or</b> DBN) on the current day. <br>
+	If no data is available for the current day, provides the most recent data. <br>
+	Non-CGI version available <a href="/realsite/projects/snippets.html#attendance">here.</a>
+	</p>
+	<form name="nycdoe" onsubmit="return validateDOEForm()" action="/realsite/cgi-bin/services/nycdoe-fetch-attendance.cgi" method="POST">
+		School Name: <input id="schoolname" type="text" name="schoolname"> <br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<h3>QR Code Image Generator</h3>
+	<p>
+	Generates a PNG image containing a QR code based upon the given text. <br>
+	Non-CGI version available <a href="/realsite/projects/snippets.html#mkqrcode">here.</a>
+	</p>
+	<form name="qrcode" onsubmit="return validateQRCForm()" action="/realsite/cgi-bin/services/mk-qrcode.cgi" method="POST">
+		Text: <input id="qrtext" type="text" name="qrtext"> <br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<script>
+		function validatePAForm()
+		{
+			var name = document.forms["register"]["pausername"].value;
+			var pwd = document.forms["register"]["papassword"].value;
+
+			if (name == null || name == "" || pwd == null || pwd == "")
+			{
+				alert("Please fill out all sections of the registration.");
+				return false;
+			}
+			else return true;
+		}
+
+		function validateDOEForm()
+		{
+			var schname = document.forms["nycdoe"]["schoolname"].value;
+
+			if (schname == null || schname == "")
+			{
+				alert("Please fill out all sections of the form.");
+				return false;
+			}
+			else return true;
+		}
+
+		function validateQRCForm()
+		{
+			var qrtext = document.forms["qrcode"]["qrtext"].value;
+
+			if (qrtext == null || qrtext == "")
+			{
+				alert("Please fill out all sections of the form.");
+				return false;
+			}
+			else return true;
+		}
+	</script>
+</body>
+</html>

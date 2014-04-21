@@ -1,0 +1,115 @@
+/*
+	woah, a stylesheet!
+	how web 2.0!
+
+	For the record, there are probably a number of things that are horribly wrong with my usage of CSS.
+*/
+
+@font-face
+{
+	font-family: 'Myriad Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+body
+{
+	font-family: "Myriad Pro Regular";
+	text-align: center;
+}
+
+body.projects-body
+{
+	font-family: "Myriad Pro Regular";
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+body.about-body
+{
+	font-family: "Myriad Pro Regular";
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+p.large-center
+{
+	font-size: 36pt;
+}
+
+p.med-center
+{
+	font-size: 24pt;
+}
+
+p.med-center-small
+{
+	font-size: 24pt;
+	margin-bottom: 10px;
+}
+
+p.small-center
+{
+	font-size: 12pt;
+}
+
+a.link-noline
+{
+	text-decoration: none;
+}
+
+#hello, #projects, #about
+{
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 25%;
+}
+
+#hello
+{
+	top: 0%;
+	bottom: 25%;
+}
+
+#projects
+{
+	top: 25%;
+	bottom: 50%;
+}
+
+#about
+{
+	top: 50%;
+	bottom: 75%;
+}
+
+#realsite
+{
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 20%;
+	top: 75%;
+	bottom: 95%;
+}
+
+#index-footer
+{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 95%;
+	bottom: 100%;
+}
+
+.projects-header
+{
+	left: 0;
+	right: 0;
+	height: 100px;
+}
+

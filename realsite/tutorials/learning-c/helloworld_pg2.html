@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Page 2: Hello, World!</title>
+	<style type="text/css">
+		body
+		{
+			font-family: "Times New Roman", Georgia, Serif;
+		}
+
+		.subheading
+		{
+			position: relative;
+			top: -15px;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="/realsite/index.html">Home</a> <br>
+	<a href="/realsite/tutorials/learning-c/intro_pg1.html">Back to Page 1: Introduction</a>
+
+	<h1>Page 2: Hello, World!</h1>
+	<h4 class="subheading"><em>Fun fact: the first "Hello, World!" program was written in C.</em></h4>
+
+	<h2>Pre-standard C</h2>
+	<p>
+	The original "Hello, World!" program looked something like this: <br>
+	<pre><code>
+	main()
+	{ 
+		printf("Hello, World!"); 
+	} 
+	</code></pre>
+	To those familiar with Java, C++, or C#, this code should look awfully familiar. <br>
+	Like the languages derived from it, C makes simple tasks very obvious. From the top down: <br>
+	<ul>
+		<li><code>main()  //the start point for execution. Compare to Java's "public static void main()"</code></li>
+		<li>Brackets indicate a change in scope. They can be nested, but must <em>always</em> be paired.</li>
+		<li><code>printf("Hello, World!");  //the output. In this case, the string "Hello, World!" is passed to the printf() function, which sends it to the user's terminal.</code></li>
+	</ul>
+	However, this code is awfully outdated. It doesn't follow modern standards like ANSI (C89) or C99, and leaves a lot of things for the compiler to fill in.
+	</p>
+
+	<h2>A Modern "Hello, World!"</h2>
+	<p>
+	Here is a more modern, idiomatic "Hello, World!" with comments: <br>
+	<pre><code>
+	#include &lt;stdio.h&gt; // include header files
+	#include &lt;stdlib.h&gt;
+
+	int main(void)
+	{
+		printf("%s\n", "Hello, World!"); // output
+
+		return EXIT_SUCCESS; // exit from program with success code
+	}
+	</code></pre>
+
+	Needless to say, there's a lot more going on here. Apart from the simple increase in characters, we have cryptic statements like "%s\n", "#include", and "EXIT_SUCCESS". <br>
+	Here's the breakdown: <br> 
+
+	<h3>What is a header file?</h3>
+	<p>
+	Unlike languages like Java and C#, which "import" their libraries, C uses what are known as "header files" to interact explicitly with the functions and variables of libraries. <br>
+	Header files are written in C, and contain function, type, and variable declarations that prevent the compiler from complaining about unknown data during program compilation. <br>
+	In particular, the "stdio.h" and "stdlib.h" headers contain definitions for the <code>printf()</code> function and <code>EXIT_SUCCESS</code> macro respectively.
+	</p>
+
+	<h3>What's with <code>int</code> and <code>main(void)</code>?</h3>
+	<p>
+	Unlike the earlier "Hello, World!" program, this one is bound by strict standards. That's not to say that pre-ANSI C wasn't standardized (it was, by "The C Programming Language" by Kernighan and Ritchie), but it lacked the weight of standardization organizations like ANSI (and later ISO). <br>
+	Some of the most important restrictions imposed upon C89 and C99 involved <em>implicitness</em>. <br>
+	For example, C89+ conformant compilers will complain (if not outright terminate compilation) if the <code>main</code> function does not have a return type of <code>int</code>. <br>
+	This ensures that the <em>executing environment</em>, or operating system, can determine the <em>exit status</em>, or nature of termination, for the program. <br>
+	For more on exit status, see <a href="#exit">EXIT_SUCCESS</a> below. <br> <br>
+
+	The "<code>void</code>" in <code>main(void)</code> is simply a more explicit way of saying that you don't expect any arguments from the user. We'll cover receiving arguments and interpreting them later. 
+	</p>
+
+	<h3>"%s and \n"?</h3>
+	<p>
+	Probably the most cryptic part of this program, "%s" and "\n" are elements of <code>printf()</code>'s formatting abilities.
+	Where the first program ignores the "f" (for "format") in <code>printf()</code> and treats it as a plain-old output function, this "Hello, World!" tells <code>printf()</code> to expect a <u>s</u>tring with "%s" as its next argument. <br>
+	That's followed up by "\n", which is an <em>escape sequence</em> for the newline character. <br>
+	Explicitly adding the newline has one major benefit: by telling <code>printf()</code> to add a newline directly after the formatted output, it ensures that the output stream is <em>flushed</em> to the user immediately. <br>
+	This doesn't prove to be a problem due to immediate program termination after output, but the newline is <em>crucial</em> when outputting in real time - it forces the output to occur immediately instead of buffering.
+	</p>
+
+	<h3 id="exit">EXIT_SUCCESS?</h3>
+	<p>
+	Going simply by its name, EXIT_SUCCESS's purpose seems fairly obvious. And it is. <br>
+	Just like the <code>return</code> statement in many other languages, C's <code>return</code> ends execution within the current function, "returning" it to the calling function with the supplied value (if any). <br>
+	In this case, because the main function is the starting point, <code>return</code> sends its value to the environment, which can be bash, cmd.exe, or anything else. <br>
+	Most systems define EXIT_SUCCESS to be 0, but not all do. Because of that, it isn't always safe to <code>return 0</code> when writing cross-platform code.
+	</p>
+
+	<h2>Time to Compile!</h2>
+	<p>
+	Once you understand what these code segments actually do, you should try compiling them. <br>
+	I won't go into the differences in compilation on each system, but all POSIX environments should follow this rough path in their shells:
+	<pre><code>
+	$ cc helloworld.c -std=c89 -o helloworld
+	$ ./helloworld
+	<samp>
+	Hello, World!
+	</samp>
+	</code></pre>
+	Repeat that for both "Hello, World!" programs. <br>
+	What differences do you observe during compilation? Does the pre-ANSI program compile at all?
+	</p>
+
+	<a href="/realsite/tutorials/learning-c/variables_pg3.html">Page 3: Variables</a>
+</body>
+</html>
