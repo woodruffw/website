@@ -110,6 +110,13 @@ a.link-noline
 {
 	left: 0;
 	right: 0;
-	height: 120px;
+	height: 140px;
+}
+
+div.corner-link
+{
+	position: fixed;
+	left: 10px;
+	top: 5px;
 }
 
