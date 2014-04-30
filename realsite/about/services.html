@@ -60,7 +60,7 @@
 	Non-CGI version available <a href="/realsite/projects/snippets.html#attendance">here.</a>
 	</p>
 	<form name="nycdoe" onsubmit="return validateDOEForm()" action="/realsite/cgi-bin/services/nycdoe-fetch-attendance.cgi" method="POST">
-		School Name: <input id="schoolname" type="text" name="schoolname"> <br>
+		School Name: <input id="schoolname" type="text" name="schoolname"> 
 		<input type="submit" value="Submit">
 	</form>
 
@@ -70,9 +70,19 @@
 	Non-CGI version available <a href="/realsite/projects/snippets.html#mkqrcode">here.</a>
 	</p>
 	<form name="qrcode" onsubmit="return validateQRCForm()" action="/realsite/cgi-bin/services/mk-qrcode.cgi" method="POST">
-		Text: <input id="qrtext" type="text" name="qrtext"> <br>
+		Text: <input id="qrtext" type="text" name="qrtext"> 
 		<input type="submit" value="Submit">
 	</form>
+
+	<h3>Urban Dictionary Data Visualizer</h3>
+	<p>
+	Visualizes definition and popularity data for a given Urban Dictionary query. <br>
+	Based loosely upon a simpler Urban Dictionary API grabber available <a href="/realsite/projects/snippets.html#wtf-urban">here.</a>
+	<form name="udvis" onsubmit="return validateUDVForm()" action="/realsite/cgi-bin/visualize-urbandictionary.cgi" method="POST">
+		Term to query: <input id="udquery" type="text" name="udquery">
+		<input type="submit" value="Submit">
+	</form>
+	</p>
 
 	<script>
 		function validatePAForm()
@@ -105,6 +115,18 @@
 			var qrtext = document.forms["qrcode"]["qrtext"].value;
 
 			if (qrtext == null || qrtext == "")
+			{
+				alert("Please fill out all sections of the form.");
+				return false;
+			}
+			else return true;
+		}
+
+		function validateUDVForm()
+		{
+			var query = document.forms["udvis"]["udquery"].value;
+
+			if (query == null || query == "")
 			{
 				alert("Please fill out all sections of the form.");
 				return false;
