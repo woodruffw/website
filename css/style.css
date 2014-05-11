@@ -45,6 +45,12 @@ p.med-center
 	font-size: 24pt;
 }
 
+p.project-med-center
+{
+	font-size: 24pt;
+	margin-bottom: -8px; 
+}
+
 p.med-center-small
 {
 	font-size: 24pt;
@@ -120,3 +126,7 @@ div.corner-link
 	top: 5px;
 }
 
+div.project-icon-box
+{
+	border-top: 5px;
+}
