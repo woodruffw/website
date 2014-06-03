@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	laughingman-wob-notext.svg
+	Author: Robin Redeker (?)
+	Modifier: William Woodruff
+	A black-on-white Laughing Man, without quote.
+	I found the original version of this here: http://bbs2ch.sourceforge.jp/xul/laughingman.svg
+	It's likely source was Robin Redeker (http://www.ta-sa.org/art/laughing_man_logo.html)
+	All I did was de-animate and recolor it. I do not own the rights to the Laughing Man.
+-->
+<svg version="1.0" width="500" height="460" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<title>laughingman</title>
+
+	<g id="layerBack">
+		<circle cx="230" cy="230" r="205" fill="#FFF" stroke="#000" stroke-width="12"/>
+	</g>
+
+	<g id="layerFace">
+		<circle id="faceBase" cx="230" cy="230" r="145" fill="#FFF" stroke="#000" stroke-width="20"/>
+		<path id="leftEye" fill="#000" d="M 145,240 C 165,225 180,225 200,240 C 190,210 155,210 145,240 z"/>
+		<path id="rightEye" fill="#000" d="M 260,240 C 280,225 295,225 315,240 C 305,210 270,210 260,240 z"/>
+		<path id="mouth" fill="#FFF" stroke="#000" stroke-width="20" d="M 130,260 L 330,260 C 305,360 150,360 130,260 z"/>
+
+		<circle id="hatBrim" cx="440" cy="230" r="30" fill="#FFF" stroke="#000" stroke-width="20"/>        
+		<rect id="hatBrimTop" width="350" height="20" x="90" y="190" fill="#000"/>
+		<rect id="hatBrimBottom" width="70" height="20" x="370" y="250" fill="#000"/>
+		<rect id="hatBrimMask" width="90" height="40" x="350" y="210" fill="#FFF"/>
+		<path id="hatTop" d="M 220,70 L 240,70 L 245,80 L 215,80 z" fill="#000"/>
+
+		<rect id="faceLeftMask" width="30" height="15" x="70" y="210" fill="#FFF"/>
+	</g>
+
+
+</svg>

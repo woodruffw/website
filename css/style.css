@@ -68,39 +68,41 @@ a.link-noline
 	text-decoration: none;
 }
 
-#hello, #projects, #about
-{
-	position: fixed;
-	left: 0;
-	right: 0;
-	height: 25%;
-}
-
-#hello
-{
-	top: 0%;
-	bottom: 25%;
-}
-
-#projects
-{
-	top: 25%;
-	bottom: 50%;
-}
-
-#about
-{
-	top: 50%;
-	bottom: 75%;
-}
-
-#realsite
+#hello, #projects, #about, #graphics, #realsite
 {
 	position: fixed;
 	left: 0;
 	right: 0;
 	height: 20%;
-	top: 75%;
+}
+
+#hello
+{
+	top: 0%;
+	bottom: 20%;
+}
+
+#projects
+{
+	top: 20%;
+	bottom: 40%;
+}
+
+#graphics
+{
+	top: 40%;
+	bottom: 60%;
+}
+
+#about
+{
+	top: 60%;
+	bottom: 80%;
+}
+
+#realsite
+{
+	top: 80%;
 	bottom: 95%;
 }
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	cgolglider.svg
+	Author: William Woodruff
+	A white on black glider from Conway's Game of Life.
+	Use and modification permitted provided credit is given to the author(s). 
+-->
+<svg version="1.0" width="1000" height="1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<title>cgolglider</title>
+
+	<rect width="1000" height="1000" fill="#000000" stroke="#FFF" stroke-width="5"/>
+	<line x1="333.3" y1="0" x2="333.3" y2="1000" stroke="#FFF" stroke-width="3"/>
+	<line x1="0" y1="333.3" x2="1000" y2="333.3" stroke="#FFF" stroke-width="3"/>
+	<line x1="666.6" y1="0" x2="666.6" y2="1000" stroke="#FFF" stroke-width="3"/>
+	<line x1="0" y1="666.6" x2="1000" y2="666.6" stroke="#FFF" stroke-width="3"/>
+	<circle cx="499.8" cy="166.5" r="160" stroke="#FFF" stroke-width="3" fill="#FFF"/>
+	<circle cx="832.5" cy="499.8" r="160" stroke="#FFF" stroke-width="3" fill="#FFF"/>
+	<circle cx="832.5" cy="833.1" r="160" stroke="#FFF" stroke-width="3" fill="#FFF"/>
+	<circle cx="499.8" cy="833.1" r="160" stroke="#FFF" stroke-width="3" fill="#FFF"/>
+	<circle cx="166.5" cy="833.1" r="160" stroke="#FFF" stroke-width="3" fill="#FFF"/>
+</svg>
