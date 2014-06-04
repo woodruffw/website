@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	download-arrow.svg
+-->
+<svg version="1.0" width="1000" height="1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<title>download-arrow</title>
+
+	<circle cx="500" cy="500" r="450" fill="#000"/>
+	<rect x="400" y="150" width="200" height="350" fill="#FFF"/>
+	<polygon points="200,500 800,500 500,800" fill="#FFF"/>
+</svg>
