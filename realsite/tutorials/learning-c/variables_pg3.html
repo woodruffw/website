@@ -40,6 +40,7 @@
 		<li><code>float</code> - defined to obey IEEE 754 with a precision of <em>no less than</em> 6.</li>
 		<li><code>double</code> - defined to obey IEEE 754 with a precision of <em>no less than</em> 10.</li>
 	</ul>
+	Many of these are macroed or typedefed to other, more specific types defined in <code>&lt;types.h&gt;</code> (on Linux and Unix) and <code>&lt;stdint.h&gt;</code> (cross-platform). <br>
 
 	<strong>Here is where it gets complicated: </strong> <br>
 
@@ -47,7 +48,7 @@
 	<p>
 	Each primitive type in C has a corresponding <em>pointer type</em>. <br>
 	For example, the int pointer (<code>int *</code>) is a pointer to an address containing an integer. <br>
-	Because pointers represent addresses in memory, they are always the size of the operating system's architecture. For example, 32-bit systems will have 32-bit pointers.
+	Because pointers represent addresses in memory, they are always the size of the operating system's word, or native datum. For example, 32-bit systems will have 32-bit pointers.
 	</p>
 
 	<h3>Signed and Unsigned</h3>
@@ -72,14 +73,12 @@
 	</ul>
 	</p>
 
-	<h3>Const and Volatile</h3>
-	<p>
-	
-	</p>
+	There are a few other keywords like <code>const</code> and <code>volatile</code>, but we don't have to go into too much detail about them right now.
 
-	<h3>Where are my modifiers?</h3>
+	<h3>Where are my <code>public</code> and <code>private</code>?</h3>
 	<p>
-
+	Coming from a language like C++, Java, or C#, you may find it unusual that C has no concept of public, protected, or private variables. However, they really aren't necessary. <br>
+	Without complex data structures like objects or the inheritance rules that follow them, it's really not necessary to limit the visibility of variables across the runtime.
 	</p>
 
 	<a href="/realsite/tutorials/learning-c/pointers_arrays_pg4.html">Page 4: Pointers and Arrays</a>

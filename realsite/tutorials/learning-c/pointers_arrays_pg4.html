@@ -9,13 +9,50 @@
 		{
 			font-family: "Times New Roman", Georgia, Serif;
 		}
+
+		.subheading
+		{
+			position: relative;
+			top: -15px;
+		}
 	</style>
 </head>
 
 <body>
 	<a href="/realsite/index.html">Home</a> <br>
 	<a href="/realsite/tutorials/learning-c/variables_pg3.html">Back to Page 3: Variables</a>
-	<br> <br>
+	
+	<h1>Page 4: Pointers and Arrays</h1>
+	<h4 class="subheading"><em>Fun fact: array notation in C is actually just syntactic sugar for pointer notation.</em></h4>
+
+	<h2>Pointers</h2>
+	<p>
+	As mentioned in the last section, a pointer in C holds the address in RAM of a specific variable. For example:
+	<pre><code>
+		int i = 5;
+		int *i_pointer = &amp;i;
+	</code></pre>
+	In this example, <code>i_pointer</code> now contains the location in memory of <code>i</code>, or 5. The ampersand is used to express the "address of" a variable. <br>
+	Now, pointers may not seem very useful at first. However, they are the only way to <em>pass by reference</em> in C. <br>
+	This can be incredibly useful in input functions like <code>scanf</code>:
+	<pre><code>
+		int a = 0, b = 0, c = 0;
+		int *ap = &amp;a, *bp = &amp;b, *cp = &amp;c;
+
+		scanf("%d %d %d", &amp;a, &amp;b, &amp;c);
+		scanf("%d %d %d", ap, bp, cp);
+	</code></pre>
+	It's very important to understand that the two <code>scanf</code> calls in the code above do the <strong>exact same thing</strong>. In fact, the second call will overwrite the variables stored by the first call. <br>
+	The only difference is how the variables are accessed and stored. One uses direct "address of" notation to skip declaring pointer variables, while the other explictly declares a pointer to each variable to be scanned into.
+	These pointers can then be accessed by <em>dereferencing</em>:
+	<pre><code>
+		printf("%d %d %d\n", a, b, c);
+		printf("%d %d %d\n", *ap, *bp, *cp);
+	</code></pre>
+	Again, these two calls do the <strong>exact same thing</strong>, but through different processes. Because ap, bp, and cp are pointers, they cannot be printed out as decimals (Well, they can, but something weird will happen. Try it out.)
+	They must be <em>dereferenced</em>, which is to say that the data stored they point to must be accessed.
+	</p>
+
 	<a href="/realsite/tutorials/learning-c/structs_pg5.html">Page 5: structs</a>
 </body>
 </html>
