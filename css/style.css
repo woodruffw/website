@@ -19,6 +19,25 @@ body
 	text-align: center;
 }
 
+h1
+{
+	font-weight: normal;
+	font-size: 250%;
+}
+
+h2
+{
+	font-weight: normal;
+	font-size: 200%;
+	margin-bottom: -10px;
+}
+
+h3
+{
+	font-weight: normal;
+	font-size: 150%;
+}
+
 a img
 {
 	border: 0;
@@ -119,7 +138,6 @@ a.link-noline
 {
 	left: 0;
 	right: 0;
-	height: 140px;
 }
 
 div.corner-link
