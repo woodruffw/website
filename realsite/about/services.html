@@ -35,7 +35,7 @@
 	<p>
 	To request an account in advance (comes with (S)FTP access too!): <br>
 	</p>
-	<form name="register" onsubmit="return validatePAForm()" action="/realsite/cgi-bin/services/account-request.cgi" method="POST">
+	<form name="register" onsubmit="return validatePAForm()" action="/realsite/cgi-bin/account-request.cgi" method="POST">
 		Username: <input id="pausername" type="text" name="pausername" maxlength="10"> <br>
 		Password: <input type="password" name="papassword"> <br>
 		<input type="submit" value="Submit">
@@ -59,7 +59,7 @@
 	If no data is available for the current day, provides the most recent data. <br>
 	Non-CGI version available <a href="/realsite/projects/snippets.html#attendance">here.</a>
 	</p>
-	<form name="nycdoe" onsubmit="return validateDOEForm()" action="/realsite/cgi-bin/services/nycdoe-fetch-attendance.cgi" method="POST">
+	<form name="nycdoe" onsubmit="return validateDOEForm()" action="/realsite/cgi-bin/nycdoe-fetch-attendance.cgi" method="POST">
 		School Name: <input id="schoolname" type="text" name="schoolname"> 
 		<input type="submit" value="Submit">
 	</form>
@@ -69,7 +69,7 @@
 	Generates a PNG image containing a QR code based upon the given text. <br>
 	Non-CGI version available <a href="/realsite/projects/snippets.html#mkqrcode">here.</a>
 	</p>
-	<form name="qrcode" onsubmit="return validateQRCForm()" action="/realsite/cgi-bin/services/mk-qrcode.cgi" method="POST">
+	<form name="qrcode" onsubmit="return validateQRCForm()" action="/realsite/cgi-bin/mk-qrcode.cgi" method="POST">
 		Text: <input id="qrtext" type="text" name="qrtext"> 
 		<input type="submit" value="Submit">
 	</form>
