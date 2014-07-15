@@ -1,71 +1,71 @@
-Processes: 59 total, 5 running, 2 stuck, 52 sleeping, 190 threads 
-2014/07/14 00:00:01
-Load Avg: 0.00, 0.01, 0.00 
-CPU usage: 50.0% user, 50.0% sys, 0.0% idle 
-SharedLibs: 18M resident, 864K data, 1752K linkedit.
-MemRegions: 3602 total, 120M resident, 4964K private, 21M shared.
-PhysMem: 275M wired, 151M active, 17M inactive, 443M used, 1092M free.
-VM: 37G vsize, 460M framework vsize, 248608056(0) pageins, 920417(0) pageouts.
-Networks: packets: 469212614/307G in, 669906045/505G out.
-Disks: 61490991/1448G read, 33109508/783G written.
+Processes: 59 total, 4 running, 2 stuck, 53 sleeping, 191 threads 
+2014/07/15 00:00:00
+Load Avg: 0.02, 0.02, 0.00 
+CPU usage: 42.85% user, 57.14% sys, 0.0% idle 
+SharedLibs: 23M resident, 1224K data, 2092K linkedit.
+MemRegions: 3592 total, 120M resident, 4896K private, 23M shared.
+PhysMem: 275M wired, 154M active, 32M inactive, 461M used, 1074M free.
+VM: 37G vsize, 460M framework vsize, 248886823(0) pageins, 920417(0) pageouts.
+Networks: packets: 469304982/307G in, 669977874/505G out.
+Disks: 61594150/1450G read, 33166868/784G written.
 
 PID    COMMAND          %CPU TIME     #TH  #WQ
-98263  tmux             0.0  01:40:22 1    0  
-95803  mDNSResponder    0.0  24:35.65 3    1  
-95801  syslogd          0.0  41:26.74 4/1  0  
+98263  tmux             0.0  01:40:55 1    0  
+95803  mDNSResponder    0.0  24:37.69 3    1  
+95801  syslogd          0.0  41:35.42 4/1  0  
 89753  bash             0.0  00:00.45 1    0  
 87332  bash             0.0  00:00.60 1    0  
-82649  htop             0.0  04:05:11 1/1  0  
+82649  htop             0.0  04:11:57 1    0  
 82641  bash             0.0  00:00.01 1    0  
-79663  cron             0.0  03:33.98 1    0  
+79663  cron             0.0  03:34.88 1    0  
 73571  fcgiwrap         0.0  00:00.40 1    0  
-71546  appleprofilepoli 0.0  00:26.51 1    0  
-65104  configd          0.0  04:36.03 6    1  
-64161  fseventsd        0.0  06:54.21 8    1  
+71546  appleprofilepoli 0.0  00:26.64 1    0  
+65104  configd          0.0  04:37.06 6    1  
+64161  fseventsd        0.0  06:56.94 8    1  
 53643  bash             0.0  00:00.19 1    0  
 53602  ssh              0.0  00:00.27 1    0  
 53600  ssh              0.0  00:06.21 1    0  
-53595  ssh              0.0  00:42.95 1    0  
+53595  ssh              0.0  00:49.10 1    0  
 51061  bash             0.0  00:00.59 1    0  
-48688  sshguard         0.0  00:52.38 2    0  
+48688  sshguard         0.0  00:52.66 2    0  
 44397  tmux             0.0  00:00.00 1    0  
 44391  bash             0.0  00:00.01 1    0  
-44387  sshd             0.0  00:07.22 1    0  
+44387  sshd             0.0  00:07.42 1    0  
 44383  sshd             0.0  00:00.57 1    0  
-38870  nginx            0.0  00:00.69 1    0  
+38870  nginx            0.0  00:00.73 1    0  
 38869  nginx            0.0  00:00.00 1    0  
-38378  launchd          0.0  00:13.98 2    0  
-24467  purge            0.0  00:00.00 1    0  
-24466  taskgated        0.0  00:00.00 2    0  
-24465  top              0.0  00:00.03 1/1  0  
-24464  bash             0.0  00:00.00 1    0  
-24463  bash             0.0  00:00.00 1    0  
-24462  cron             0.0  00:00.00 1    0  
-24461  env              0.0  00:00.00 1    0  
-24460  perl             0.0  00:00.02 1/1  0  
-24459  cron             0.0  00:00.00 1    0  
-24458  cron             0.0  00:00.00 1    0  
-24457  cron             0.0  00:00.00 1    0  
+38521  purge            0.0  00:00.00 1    0  
+38520  taskgated        0.0  00:00.00 3    0  
+38519  top              0.0  00:00.03 1/1  0  
+38518  bash             0.0  00:00.00 1    0  
+38517  bash             0.0  00:00.00 1    0  
+38516  bash             0.0  00:00.00 1    0  
+38515  cron             0.0  00:00.00 1    0  
+38514  perl             0.0  00:00.02 1/1  0  
+38513  cron             0.0  00:00.00 1    0  
+38512  cron             0.0  00:00.00 1    0  
+38511  cron             0.0  00:00.00 1    0  
+38378  launchd          0.0  00:16.67 2    0  
 7099   bash             0.0  00:00.01 1    0  
 7095   bash             0.0  00:00.01 1    0  
 7082   bash             0.0  00:00.01 1    0  
-2234   fontd            0.0  00:19.48 2    1  
-764    dbfseventsd      0.0  01:35.33 1    0  
-763    dbfseventsd      0.0  02:41.09 1    0  
-762    dbfseventsd      0.0  00:29.01 1    0  
-748    Dropbox          0.0  01:58:55 33   1  
-53     coreservicesd    0.0  11:46.67 4    1  
-49     autofsd          0.0  01:20.17 2    1  
+2234   fontd            0.0  00:20.04 2    1  
+764    dbfseventsd      0.0  01:35.79 1    0  
+763    dbfseventsd      0.0  02:41.96 1    0  
+762    dbfseventsd      0.0  00:29.35 1    0  
+748    Dropbox          0.0  02:00:48 33   1  
+53     coreservicesd    0.0  11:47.44 4    1  
+49     autofsd          0.0  01:20.46 2    1  
 42     dynamic_pager    0.0  00:02.57 1    0  
-39     hidd             0.0  01:48.23 2    1  
-37     KernelEventAgent 0.0  05:02.19 3    1  
-30     usbmuxd          0.0  01:32.70 3    1  
-26     ntpd             0.0  44:29.25 1    0  
-22     securityd        0.0  01:42.11 1    0  
-16     distnoted        0.0  05:36.09 2    1  
-13     diskarbitrationd 0.0  02:09.04 2    1  
-12     notifyd          0.0  19:12.78 2    0  
-11     DirectoryService 0.0  58:45.92 7    5  
-10     kextd            0.0  02:09.03 2    1  
-1      launchd          0.0  06:22:05 3    0  
-0      kernel_task      0.0  29:23:13 58/2 0  
+39     hidd             0.0  01:48.63 2    1  
+37     KernelEventAgent 0.0  05:03.39 3    1  
+30     usbmuxd          0.0  01:33.03 3    1  
+26     ntpd             0.0  44:37.53 1    0  
+22     securityd        0.0  01:42.36 1    0  
+16     distnoted        0.0  05:36.96 2    1  
+13     diskarbitrationd 0.0  02:09.50 2    1  
+12     notifyd          0.0  19:15.53 2    0  
+11     DirectoryService 0.0  58:55.76 7    5  
+10     kextd            0.0  02:09.49 2    1  
+1      launchd          0.0  06:23:25 3    0  
+0      kernel_task      0.0  29:27:50 58/2 0  
