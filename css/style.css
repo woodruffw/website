@@ -87,42 +87,36 @@ a.link-noline
 	text-decoration: none;
 }
 
-#hello, #projects, #about, #graphics, #realsite
+#hello, #projects, #about, #realsite
 {
 	position: fixed;
 	left: 0;
 	right: 0;
-	height: 20%;
+	height: 25%;
 }
 
 #hello
 {
 	top: 0%;
-	bottom: 20%;
+	bottom: 25%;
 }
 
 #about
 {
-	top: 20%;
-	bottom: 40%;
+	top: 25%;
+	bottom: 50%;
 }
 
 #projects
 {
-	top: 40%;
-	bottom: 60%;
-}
-
-#graphics
-{
-	top: 60%;
-	bottom: 80%;
+	top: 50%;
+	bottom: 75%;
 }
 
 #realsite
 {
-	top: 80%;
-	bottom: 95%;
+	top: 75%;
+	bottom: 100%;
 }
 
 #index-footer
