@@ -27,59 +27,58 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Yet Another Programming Blog</h1>
+                    <h2>A work in progress. Go away.</h2>
                     <hr>
                 </div>
             </div>
             <div class="row">
             	<div class="col-lg-8" id="latest">
-            		<h2>Archive 2: A guide to the Secure Shell (SSH) on *nix.</h2>
-
-                	<h3>What You'll Need</h3>
-                	<ul>
-                	<li>A fully or reasonably POSIX compliant OS. This includes *BSD, Linux, OS X, Solaris, and Cygwin on Windows.</li>
-                	<li>OpenSSH or another implementation of SSH. This is almost always already installed. If it isn't, one can be installed easily via your package manager.</li>
-                	<li>A valid username and password for the server you're connecting to.</li>
-                	</ul>
-
-                	<h3>Instructions</h3>
-                	<p>
-                	First, open up your terminal emulator. On OS X, this is an application called "Terminal." <br> On other Unix-like OSes, this can be xterm, rxvt, or any other user-installer terminal emulator. <br>
-                	You should be greeted by something similar to this:
-                	</p>
-
-                	<img src="/realsite/res/imgs/tutorials/sshnix/terminal.png" alt="A Terminal">
-
-                	<p>
-                	The terminal has a number of incredibly useful functions and utilities, but we'll be focusing on the `ssh' utility, which provides full terminal access to a remote system. <br>
-                	To begin, type `ssh' followed by your username and the remote system's IP or hostname. <br>
-                	The format of this section is exactly like an e-mail address:
-                	</p>
-
-                	<img src="/realsite/res/imgs/tutorials/sshnix/terminallogin.png" alt="SSH Login">
-
-                	<p>
-                	Press return, and you should receive some kind of warning regarding the server not being recognized. <br>
-                	This is because new connections do not have the target server's key stored. <br>
-                	Answer yes to this, and your computer will cache a unique key for future connections. <br>
-                	Press return, and you should be prompted for a password:
-                	</p>
-
-                	<img src="/realsite/res/imgs/tutorials/sshnix/terminalpass.png" alt="SSH password">
-
-                	<p>
-                	Enter your password carefully, as most terminals do not echo input in secure fields (like passwords). <br>
-                	Press return. <br>
-                	Congratulations! You're now SSHed into a remote host!
-                	</p>
-
-                	<img src="/realsite/res/imgs/tutorials/sshnix/terminalcongrats.png" alt="Terminal Congratulations">
-
-                	<h3>Now What?</h3>
-                	<p>
-                	Because an SSH session on a remote host is virtually identical to a physical terminal session on a local host, you have access to many, all, or even more of the commands you had on your physical host. <br>
-                	Provided the environment is POSIX or POSIX-like, you should feel right at home. <br>
-                	If you have any questions, don't be afraid to message another user with <code>talk</code> or to send out a systemwide request with <code>wall</code>. 
-                	</p>
+            		<h2>Windows 7 and Samba: Playing Nicely</h2>
+            		<p>
+            			I recently tried to set up some network shares between my servers and my desktop, hoping to alleviate 
+            			the syncing and latency issues that I often experienced with large projects under Dropbox.
+            		</p>
+            		<p>
+            			I had no idea what I was stepping into.
+            		</p>
+            		<p>
+            			I started with NFS, assuming that it was the most common and would be easy to install across all of my systems.
+            			Installation on Arch was relatively simple, only requiring the <code>nfs-utils</code> package and a small amount of configuration.
+            			Everything was looking good, until I tried to mount the share on Windows. Because I bought the "Home Edition" of Windows 
+            			Microsoft, in its infinite wisdom, decided that I would never need their NFS implementation, or anything else from the "Services for UNIX"
+            			package commonly available on "Enterprise" versions of Windows.
+            		</p>
+            		<p>
+            			No problem, I thought. I would install an implementation on my own. I quickly discovered that Microsoft had, in fact, sponsored the development
+            			of a native NFSv4.1 implementation for Windows by the <a href="http://www.citi.umich.edu/projects/nfsv4/windows/">CITI group</a> at the University of Michigan.
+            			To my surprise and joy, CITI had the presence of mind to release their work both in source and binary form, along with detailed instructions for installation.
+            			I blazed through their instructions, anticipating success, and promptly botched the entire job. In the subsequent fit of frustration, I uninstalled NFS from my server,
+            			and forgot about all of the little configuration changes I had made to my desktop.
+            		</p>
+            		<p>
+            			Fast forward about a month, and I was ready to try again. I went on the Samba route, expecting the native (and commonly used) SMB/CIFS implementation on Windows
+            			to play nicely with Samba's (well tested) open source implementation. Just like with NFS, Samba's installation process on Linux was trivial: I installed the <code>samba</code>
+            			package from my package manager, updated the configuration file, ran <code>testparm</code>, and started the <code>smbd</code> and <code>nmbd</code> services.
+            			Initially, everything seemed fine. <code>smbclient</code> was able to connect to my shares, and other Unix and Linux clients could control them as permitted.
+            		</p>
+            		<p>
+            			Then I tried to mount the share on Windows. Boom, cryptic error message. "0x80070002: The system cannot find the file specified."
+            		</p>
+            		<p>
+            			As it turned out, after a little bit of searching, lots of other people had run into the error while trying to mount their SMB shares,
+            			both from Windows and Linux clients. Unfortunately, as I soon discovered, this was because "0x80070002" is Windows-ese for "I don't know why this didn't work, so I'm going
+            			blame the user and call it a day. Don't bug me."
+            		</p>
+            		<p>
+            			After several hours of fruitless searching and asking on <a href="http://serverfault.com/questions/620558/cant-access-smb-shares-on-windows-but-can-on-linux/620620#620620">serverfault (Spoiler Alert!)</a>,
+            			I finally came across <a href="http://panerarichang.blogspot.com/2011/07/win2k8error-code-0x80070002-system.html">a blog post by a guy named Chang</a>. In it, Chang discovers that a registry key,
+            			<code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\NetworkProvider\Order\ProviderOrder</code> was inadvertently overwritten. Because various Windows networking services check the <code>ProviderOrder</code>
+            			for the correct implementation to use, a missing or malformed CSV string can completely bork or confuse many network processes. I opened up Regedit, navigated to the key, and guess what I find?
+            		</p>
+            		<p>
+            			"NFSv4." The first entry in the <code>ProviderOrder</code> key was "NFSv4," causing any SMB service that queried the key looking for a SMB/CIFS implementation to immediately fail.
+            			I deleted the offending entry, and appended Chang's suggested string, which included <code>mhgfs</code>, <code>hgfs</code>, <code>LanmanWorkstation</code>, and <code>RDPNP</code> as valid implementations.
+            		</p>
                     <hr>
                     <h3><a href="/blog/archive/archive.html">Older posts</a></h3>
                 </div>
