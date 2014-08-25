@@ -76,8 +76,9 @@
             			for the correct implementation to use, a missing or malformed CSV string can completely bork or confuse many network processes. I opened up Regedit, navigated to the key, and guess what I find?
             		</p>
             		<p>
-            			"NFSv4." The first entry in the <code>ProviderOrder</code> key was "NFSv4," causing any SMB service that queried the key looking for a SMB/CIFS implementation to immediately fail.
-            			I deleted the offending entry, and appended Chang's suggested string, which included <code>mhgfs</code>, <code>hgfs</code>, <code>LanmanWorkstation</code>, and <code>RDPNP</code> as valid implementations.
+            			"NFSv4." The first entry in the <code>ProviderOrder</code> key was "NFSv4," a key ostensibly added by the NFSv4 driver(s) that I had previously (attempted) to install.
+            			As a result, any SMB service that queried the key looking for a SMB/CIFS implementation to operate with immediately fail with no explanation, leaving me with an ambiguous error message.
+            			I deleted the offending entry and appended Chang's suggested string, which included <code>mhgfs</code>, <code>hgfs</code>, <code>LanmanWorkstation</code>, and <code>RDPNP</code> as valid implementations.
             		</p>
                     <hr>
                     <h3><a href="/blog/archive/archive.html">Older posts</a></h3>
