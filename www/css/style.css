@@ -1,22 +1,6 @@
-/*
-	woah, a stylesheet!
-	how web 2.0!
-
-	For the record, there are probably a number of things that are horribly wrong with my usage of CSS.
-*/
-
-@font-face
-{
-	font-family: 'Myriad Pro Regular';
-	font-style: normal;
-	font-weight: normal;
-	src: url('/fonts/MYRIADPRO-REGULAR.woff') format('woff');
-}
-
 body
 {
-	font-family: "Myriad Pro Regular";
-	text-align: center;
+	font-family: "Times New Roman";
 }
 
 h1
@@ -25,129 +9,8 @@ h1
 	font-size: 250%;
 }
 
-h2
+.udl
 {
-	font-weight: normal;
-	font-size: 200%;
-	margin-bottom: -10px;
+	border-bottom: 1px solid #aaa;
 }
 
-h3
-{
-	font-weight: normal;
-	font-size: 150%;
-}
-
-a img
-{
-	border: 0;
-}
-
-body.projects-body
-{
-	margin-left: 20%;
-	margin-right: 20%;
-}
-
-body.about-body
-{
-	margin-left: 15%;
-	margin-right: 15%;
-}
-
-p.large-center
-{
-	font-size: 36pt;
-}
-
-p.med-center
-{
-	font-size: 24pt;
-}
-
-p.project-med-center
-{
-	font-size: 24pt;
-	margin-bottom: -8px; 
-}
-
-p.med-center-small
-{
-	font-size: 24pt;
-	margin-bottom: 10px;
-}
-
-p.small-center
-{
-	font-size: 12pt;
-}
-
-a.link-noline
-{
-	text-decoration: none;
-}
-
-#hello, #projects, #about, #realsite, #blog
-{
-	position: fixed;
-	left: 0;
-	right: 0;
-	height: 20%;
-}
-
-#hello
-{
-	top: 0%;
-	bottom: 20%;
-}
-
-#about
-{
-	top: 20%;
-	bottom: 40%;
-}
-
-#projects
-{
-	top: 40%;
-	bottom: 60%;
-}
-
-#blog
-{
-	top: 60%;
-	bottom: 80%;
-}
-
-#realsite
-{
-	top: 80%;
-	bottom: 100%;
-}
-
-#index-footer
-{
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 95%;
-	bottom: 100%;
-}
-
-.projects-header
-{
-	left: 0;
-	right: 0;
-}
-
-div.corner-link
-{
-	position: fixed;
-	left: 10px;
-	top: 5px;
-}
-
-div.project-icon-box
-{
-	border-top: 5px;
-}

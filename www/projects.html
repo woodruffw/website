@@ -5,282 +5,143 @@
 	<meta charset="UTF-8">
 	<title>Projects</title>
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script>
-		$(document).ready(function()
-		{
-			$(".corner-link").hide().fadeIn(1000);
-			$(".projects-header").hide().fadeIn(1000);
-			$("#projs-big").hide().fadeIn(1000);
-			$("#projs-small").hide().fadeIn(2000);
-			$("#projs-contrib").hide().fadeIn(3000);
-		});
-	</script>
 </head>
 
-<body class="projects-body">
-	<div class="corner-link">
-		<a class="link-noline" href="/index.html">Home</a>
-	</div>
+<body>
+	<a href="/index.html">Home</a>
 
-	<div class="projects-header">
-		<h1>Here are some of my projects.</h1>
-		<p class="small-center">
-			<a class="link-noline" href="/snippets.html">Code Snippets</a> &bull;
-			<a class="link-noline" href="https://twitter.com/robot_fortune">@robot_fortune</a>
-		</p>
-	</div>
+	<h1>Projects</h1>
 
-	<div id="projs-big">
-		<h2>Big(ger) Projects.</h2>
+	<h2>Big(ger) Projects.</h2>
+		<h3>screenfetch-c</h3>
+		screenfetch-c is a rewrite of screenFetch, the popular system information script, in C. <br>
+		It displays a variety of system statistics next to an ASCII representation of an OS logo. <br>
+		Compatible with Windows (Cygwin), OS X, Linux, BSD, and Solaris-based systems. <br>
+		<a title="View on GitHub" href="https://github.com/woodruffw/screenfetch-c"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+		<a title="Download source code" href="https://github.com/woodruffw/screenfetch-c/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-		<div class="project-box">
-			<h3>screenfetch-c</h3>
-			<p class="small-center">
-				screenfetch-c is a rewrite of screenFetch, the popular system information script, in C. <br>
-				It displays a variety of system statistics next to an ASCII representation of an OS logo. <br>
-				Compatible with Windows (Cygwin), OS X, Linux, BSD, and Solaris-based systems. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/screenfetch-c"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/screenfetch-c/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
+		<h3>libmyolinux</h3>
+		libmyolinux is a Linux interface for the <a class="link-noline" href="https://www.thalmic.com/en/myo/">Myo armband.</a> <br>
+		It receives and interprets packets received from a paired Myo, converting them into a stream of actions. <br>
+		Winner of HackUMBC 2014! <br>
+		<a title="View on GitHub" href="https://github.com/f825f5242ed81a32cd04e5269665f40a/libmyolinux"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+		<a title="Download source code" href="https://github.com/f825f5242ed81a32cd04e5269665f40a/libmyolinux/archive/master.zip"><img src="/icons/download_icon.png" alt="View on GitHub"></a>
 
-		<div class="project-box">
-			<h3>libmyolinux</h3>
-			<p class="small-center">
-				libmyolinux is a Linux interface for the <a class="link-noline" href="https://www.thalmic.com/en/myo/">Myo armband.</a> <br>
-				It receives and interprets packets received from a paired Myo, converting them into a stream of actions. <br>
-				Winner of HackUMBC 2014! <br>
+		<h3>CGoL</h3>
+		CGoL is an implementation of Conway's Game of Life, the cellular automaton, in Java. <br>
+		It operates on a finite, user-defined n-by-m plane with support for real-time cell insertion and file input. <br>
+		<a title="View on GitHub" href="https://github.com/woodruffw/CGoL"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+		<a title="Download source code" href="https://github.com/woodruffw/CGoL/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/f825f5242ed81a32cd04e5269665f40a/libmyolinux"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/f825f5242ed81a32cd04e5269665f40a/libmyolinux/archive/master.zip"><img src="/icons/download_icon.png" alt="View on GitHub"></a>
-				</div>
-			</p>
-		</div>
+		<h3>et</h3>
+		et is a dumb client that connects to a command-and-control IRC server, accepting commands to execute on the local machine <br>
+		It serves as a proof-of-concept for a simple IRC-based botnet of blind clients. <br>
+		<a title="View on GitHub" href="https://github.com/woodruffw/et"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+		<a title="Download source code" href="https://github.com/woodruffw/et/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-		<div class="project-box">
-			<h3>CGoL</h3>
-			<p class="small-center">
-				CGoL is an implementation of Conway's Game of Life, the cellular automaton, in Java. <br>
-				It operates on a finite, user-defined n-by-m plane with support for real-time cell insertion and file input. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/CGoL"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/CGoL/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
+		<h3>Complex</h3>
+		Complex is a lightweight implementation of complex numbers in Java. <br>
+		It provides an object-oriented interface to the real and imaginary components of a complex, as well as a set of common functions for operations on Complex objects. <br>
+		<a title="View on GitHub" href="https://github.com/woodruffw/Complex"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+		<a title="Download source code" href="https://github.com/woodruffw/Complex/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-		<div class="project-box">
-			<h3>et</h3>
-			<p class="small-center">
-				et is a dumb client that connects to a command-and-control IRC server, accepting commands to execute on the local machine <br>
-				It serves as a proof-of-concept for a simple IRC-based botnet of blind clients. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/et"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/et/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
+		<h3>Fractal</h3>
+		Fractal is a recursive, fractal-generating program that uses Complex and Java's standard imaging libraries to generate Mandelbrot-based fractals on the imaginary plane. <br>
+		<a title="View on GitHub" href="https://github.com/woodruffw/Fractal"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+		<a title="Download source code" href="https://github.com/woodruffw/Fractal/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-		<div class="project-box">
-			<h3>Complex</h3>
-			<p class="small-center">
-				Complex is a lightweight implementation of complex numbers in Java. <br>
-				It provides an object-oriented interface to the real and imaginary components of a complex, as well as a set of common functions for operations on Complex objects. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/Complex"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/Complex/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
+		<h3>EMG</h3>
+		A group of Arduino Wiring and Processing programs that receive EMG/EKG data from an Olimex shield and interpret it as a proof-of-concept for potential future stress and anxiety therapies. <br>
+		Developed during the HackBCA hackathon (Top 20 Winner!) <br>
+		<a title="View on GitHub" href="https://github.com/GirlScoutCookies/HackBCA-EMG"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+		<a title="Download source code" href="https://github.com/GirlScoutCookies/HackBCA-EMG/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-		<div class="project-box">
-			<h3>Fractal</h3>
-			<p class="small-center">
-				Fractal is a recursive, fractal-generating program that uses Complex and Java's standard imaging libraries to generate Mandelbrot-based fractals on the imaginary plane. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/Fractal"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/Fractal/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
+		<h3>WebService::UrbanDictionary</h3>
+		A Perl module for querying UrbanDictionary.com's JSON API. <br>
+		Supports retrieving definitions, authors, popularity metrics, and more. <br>
+		<a title="View on GitHub" href="https://github.com/woodruffw/WebService-UrbanDictionary"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+		<a title="Download source code" href="https://github.com/woodruffw/WebService-UrbanDictionary/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
+		<a title="View on CPAN" href="http://search.cpan.org/~woodruffw/WebService-UrbanDictionary/lib/WebService/UrbanDictionary.pm"><img src="/icons/perl_onion.png" alt="View on CPAN"></a>
 
-		<div class="project-box">
-			<h3>EMG</h3>
-			<p class="small-center">
-				A group of Arduino Wiring and Processing programs that receive EMG/EKG data from an Olimex shield and interpret it as a proof-of-concept for potential future stress and anxiety therapies. <br>
-				Developed during the HackBCA hackathon (Top 20 Winner!) <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/GirlScoutCookies/HackBCA-EMG"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/GirlScoutCookies/HackBCA-EMG/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
+		<h3>SimpleMail</h3>
+		A Java-based mail client capable of sending mail via SMTP through Yahoo!, Gmail, and Hotmail. <br>
+		Uses the JavaMail API for transmission. <br>
+		<a title="View on GitHub" href="https://github.com/woodruffw/SimpleMail"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+		<a title="Download source code" href="https://github.com/woodruffw/SimpleMail/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
+			
+		<h3>bbgpio</h3>
+		A C wrapper and library for general purpose I/O (GPIO) on BeagleBones. <br>
+		Provides convenience functions for opening, reading, and writing data to and from ports. <br>
+		<a title="View on GitHub" href="https://github.com/DIYElectronics/bbgpio"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+		<a title="Download source code" href="https://github.com/DIYElectronics/bbgpio/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-		<div class="project-box">
-			<h3>WebService::UrbanDictionary</h3>
-			<p class="small-center">
-				A Perl module for querying UrbanDictionary.com's JSON API. <br>
-				Supports retrieving definitions, authors, popularity metrics, and more. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/WebService-UrbanDictionary"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/WebService-UrbanDictionary/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-					<a title="View on CPAN" href="http://search.cpan.org/~woodruffw/WebService-UrbanDictionary/lib/WebService/UrbanDictionary.pm"><img src="/icons/perl_onion.png" alt="View on CPAN"></a>
-				</div>
-		</div>
+	<h2>Smal(ler) Projects.</h2>
 
-		<div class="project-box">
-			<h3>SimpleMail</h3>
-			<p class="small-center">
-				A Java-based mail client capable of sending mail via SMTP through Yahoo!, Gmail, and Hotmail. <br>
-				Uses the JavaMail API for transmission. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/SimpleMail"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/SimpleMail/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
+	<h3>Snippets</h3>
+	A collection scripts and programs too small to warrant pages. <br>
+	They range from very useful to completely useless.
+	<a title="View on GitHub" href="https://github.com/woodruffw/snippets"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+	<a title="Download source code" href="https://github.com/woodruffw/snippets/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
+	<a title="Browse online" href="http://woodruffw.us/realsite/projects/snippets.html"><img src="/icons/browse_icon.png" alt="Browse Online"></a>
+		
+	<h3>Nuisances</h3>
+	A collection of small obnoxious things. <br>
+	Demonstrates ruining a user's computer experience without ever gaining protected access. <br>
+	<a title="View on GitHub" href="https://github.com/woodruffw/nuisances"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+	<a title="Download source code" href="https://github.com/woodruffw/nuisances/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-		<div class="project-box">
-			<h3>bbgpio</h3>
-			<p class="small-center">
-				A C wrapper and library for general purpose I/O (GPIO) on BeagleBones. <br>
-				Provides convenience functions for opening, reading, and writing data to and from ports. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/DIYElectronics/bbgpio"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/DIYElectronics/bbgpio/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
-	</div>
+	<h3>osdev</h3>
+	Experiments with x86 bootloaders, mode switching, and kernels. <br>
+	<a title="View on GitHub" href="https://github.com/woodruffw/nuisances"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+	<a title="Download source code" href="https://github.com/woodruffw/nuisances/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-	<div id="projs-small">
-		<h2>Smal(ler) Projects.</h2>
+	<h3>MediaKeys</h3>
+	A shortcut emulation of multimedia keys for keyboard with no specialized keys. <br>
+	<a title="View on GitHub" href="https://github.com/woodruffw/MediaKeys"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+	<a title="Download source code" href="https://github.com/woodruffw/MediaKeys/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-		<div class="project-box">
-			<h3>Snippets</h3>
-			<p class="small-center">
-				A collection scripts and programs too small to warrant pages. <br>
-				They range from very useful to completely useless.
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/snippets"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/snippets/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-					<a title="Browse online" href="http://woodruffw.us/realsite/projects/snippets.html"><img src="/icons/browse_icon.png" alt="Browse Online"></a>
-				</div>
-		</div>
+	<h3>bytebeats</h3>
+	A collection of bytebeats for Linux systems with ALSA. <br>
+	<a title="View on GitHub" href="https://github.com/woodruffw/bytebeats"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+	<a title="Download source code" href="https://github.com/woodruffw/bytebeats/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-		<div class="project-box">
-			<h3>Nuisances</h3>
-			<p class="small-center">
-				A collection of small obnoxious things. <br>
-				Demonstrates ruining a user's computer experience without ever gaining protected access. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/nuisances"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/nuisances/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
+	<h3>old-projects</h3>
+	Old, unmaintained projects assigned from years past. <br>
+	<a title="View on GitHub" href="https://github.com/woodruffw/old-projects"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+	<a title="Download source code" href="https://github.com/woodruffw/old-projects/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
 
-		<div class="project-box">
-			<h3>osdev</h3>
-			<p class="small-center">
-				Experiments with x86 bootloaders, mode switching, and kernels. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/nuisances"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/nuisances/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
+	<h2>Projects Contributed To</h2>
 
-		<div class="project-box">
-			<h3>MediaKeys</h3>
-			<p class="small-center">
-				A shortcut emulation of multimedia keys for keyboard with no specialized keys. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/MediaKeys"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/MediaKeys/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
+	<h3>Homebrew</h3>
+	A package manager for OS X. <br>
+	Contributed various new and improved formulae. <br>
+	<a title="View on GitHub" href="https://github.com/Homebrew/homebrew"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+	<a title="View Website" href="http://brew.sh"><img src="/icons/view_website.png" alt="View Website"></a>
 
-		<div class="project-box">
-			<h3>bytebeats</h3>
-			<p class="small-center">
-				A collection of bytebeats for Linux systems with ALSA. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/bytebeats"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/bytebeats/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
+	<h3>Linguist</h3>
+	GitHub's lexical analyzer and code highlighter. <br>
+	Contributed samples and additional suffixes for detecting Matematica and Perl source code. <br>
+	<a title="View on GitHub" href="https://github.com/GitHub/linguist"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
 
-		<div class="project-box">
-			<h3>old-projects</h3>
-			<p class="small-center">
-				Old, unmaintained projects assigned from years past. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/woodruffw/old-projects"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="Download source code" href="https://github.com/woodruffw/old-projects/archive/master.zip"><img src="/icons/download_icon.png" alt="Download source"></a>
-				</div>
-		</div>
-	</div>
-	
+	<h3>screenFetch</h3>
+	The original screenshot information tool. <br>
+	Shored up parts of the script, improved GPU detection. <br>
+	<a title="View on GitHub" href="https://github.com/KittyKatt/screenFetch"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
 
-	<div id="projs-contrib">
-		<h2>Projects Contributed To</h2>
+	<h3>ddate</h3>
+	A Discordian date program, adapted from util-linux's copy. <br>
+	Removed gettext dependencies, made program more portable. <br>
+	<a title="View on GitHub" href="https://github.com/bo0ts/ddate"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
 
-		<div class="project-box">
-			<h3>Homebrew</h3>
-			<p class="small-center">
-				A package manager for OS X. <br>
-				Contributed various new and improved formulae. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/Homebrew/homebrew"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="View Website" href="http://brew.sh"><img src="/icons/view_website.png" alt="View Website"></a>
-				</div>
-		</div>
+	<h3>WinScreeny</h3>
+	A port of screenFetch to Windows, using Cygwin. <br>
+	Fixed bugs, improved system specifications detection. <br>
+	<a title="View on GitHub" href="https://github.com/Nijikokun/WinScreeny"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
 
-		<div class="project-box">
-			<h3>Linguist</h3>
-			<p class="small-center">
-				GitHub's lexical analyzer and code highlighter. <br>
-				Contributed samples and additional suffixes for detecting Matematica and Perl source code. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/GitHub/linguist"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-				</div>
-		</div>
-
-		<div class="project-box">
-			<h3>screenFetch</h3>
-			<p class="small-center">
-				The original screenshot information tool. <br>
-				Shored up parts of the script, improved GPU detection. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/KittyKatt/screenFetch"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-				</div>
-		</div>
-
-		<div class="project-box">
-			<h3>ddate</h3>
-			<p class="small-center">
-				A Discordian date program, adapted from util-linux's copy. <br>
-				Removed gettext dependencies, made program more portable. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/bo0ts/ddate"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-				</div>
-		</div>
-
-		<div class="project-box">
-			<h3>WinScreeny</h3>
-			<p class="small-center">
-				A port of screenFetch to Windows, using Cygwin. <br>
-				Fixed bugs, improved system specifications detection. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/Nijikokun/WinScreeny"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-				</div>
-		</div>
-
-		<div class="project-box">
-			<h3>matrix</h3>
-			<p class="small-center">
-				An interactive grid comparing popular programming languages. <br>
-				Added examples for C, Perl, and bash. <br>
-				<div class="project-icon-box">
-					<a title="View on GitHub" href="https://github.com/JonHMChan/matrix"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
-					<a title="View Website" href="http://bento.io/matrix"><img src="/icons/view_website.png" alt="View Website"></a>
-				</div>
-		</div>
-	</div>
+	<h3>matrix</h3>
+	An interactive grid comparing popular programming languages. <br>
+	Added examples for C, Perl, and bash. <br>
+	<a title="View on GitHub" href="https://github.com/JonHMChan/matrix"><img src="/icons/github_icon.png" alt="View on GitHub"></a>
+	<a title="View Website" href="http://bento.io/matrix"><img src="/icons/view_website.png" alt="View Website"></a>
 </body>
 </html>
