@@ -79,6 +79,11 @@
 				<li><a href="#smtp-spoof">smtp-spoof</a></li>
 			</ul>
 		</li>
+		<li><a href="#NodeJS">JavaScript (Node)</a>
+			<ul>
+				<li><a href="#webshot-screenshot">webshot-screenshot</a></li>
+			</ul>
+		</li>
 		<li><a href="#misc">Miscellaneous</a>
 			<ul>
 				<li><a href="#smbd-homebrew-plist">homebrew.mxcl.smbd</a></li>
@@ -137,12 +142,13 @@
 	<h3 id="mkqrcode">mk-qrcode</h3>
 	<p>
 	Generates a QR code image based upon textual user input. <br>
+	Uses <a href="http://search.cpan.org/~kurihara/Imager-QRCode/lib/Imager/QRCode.pm">Imager::QRCode</a>. <br>
 	<a href="https://github.com/woodruffw/snippets/blob/master/mk-qrcode/mk-qrcode.pl">View on GitHub</a>
 	</p>
 
 	<h3 id="twitterfb">twitter-fortune-bot</h3>
 	<p>
-	Uses the Twitter REST (1.1) API to tweet fortunes from the "fortune" utility. <br>
+	Uses the <a href="https://dev.twitter.com/rest/public">Twitter REST API (1.1)</a> to tweet fortunes from the "fortune" utility. <br>
 	<strong>Important: </strong>You must add your own application/API keys. <br>
 	For an example, see <a href="https://twitter.com/robot_fortune">robot_fortune on Twitter.</a> <br>
 	<a href="https://github.com/woodruffw/snippets/blob/master/twitter-fortune-bot/twitter-fortune-bot.pl">View on GitHub</a>
@@ -273,9 +279,9 @@
 
 	<h3 id="grabzit">grabzit-screenshot</h3>
 	<p>
-	Takes a screenshot of a given website and saves it to a given file. <br>
+	Takes a screenshot of a given website and saves it to the given file. <br>
 	Uses <a href="http://grabz.it/">Grabzit's API</a> to do so. <br>
-	<em>Spoiler</em>: Grabzit's API sucks and only takes thumbnails without a paid account. Don't use it. <br>
+	<em>Spoiler:</em> Grabzit's API sucks and only takes thumbnails without a paid account. Don't use it. <br>
 	<a href="https://github.com/woodruffw/snippets/blob/master/grabzit-screenshot/grabzit-screenshot.rb">View on GitHub</a>
 	</p>
 
@@ -285,6 +291,14 @@
 	Spoofs SMTP with raw sockets. <br>
 	Allows the user to send email from any address (but not any IP). <br>
 	<a href="https://github.com/woodruffw/snippets/blob/master/smtp-spoof/smtp-spoof.py">View on GitHub</a>
+	</p>
+
+	<h2 class="udl" id="NodeJS">JavaScript (Node)</h2>
+	<h3 id="webshot-screenshot">webshot-screenshot</h3>
+	<p>
+	Takes a screenshot of a given website and saves it to the given file. <br>
+	Uses <a href="https://github.com/brenden/node-webshot">node-webshot</a> to do so. <br>
+	<a href="https://github.com/woodruffw/snippets/blob/master/webshot-screenshot/webshot-screenshot.js">View on GitHub</a>
 	</p>
 
 	<h2 id="misc" class="udl">Miscellaneous</h2>
