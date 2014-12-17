@@ -1,6 +1,6 @@
 body
 {
-	font-family: "Times New Roman";
+	font-family: "Times New Roman", Georgia, serif;
 }
 
 h1
@@ -11,6 +11,26 @@ h1
 
 .udl
 {
-	border-bottom: 1px solid #aaa;
+	border-bottom: 1px solid black;
 }
 
+#left {
+	width: 33.33%;
+	height: 250px;
+	float: left;
+	border-bottom: 1px solid black;
+}
+
+#middle {
+	width: 33.33%;
+	height: 250px;
+	float: left;
+	border-bottom: 1px solid black;
+}
+
+#right {
+	width: 33.33%;
+	height: 250px;
+	float: left;
+	border-bottom: 1px solid black;
+}
