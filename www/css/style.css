@@ -1,16 +1,23 @@
-body
-{
+body {
 	font-family: "Times New Roman", Georgia, serif;
 }
 
-h1
-{
+h1 {
 	font-weight: normal;
 	font-size: 250%;
 }
 
-.udl
-{
+hr {
+	display: block;
+	margin-before: 0.5em;
+	margin-after: 0.5em;
+	margin-start: auto;
+	margin-end: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+
+.udl {
 	border-bottom: 1px solid black;
 }
 
@@ -34,3 +41,4 @@ h1
 	float: left;
 	border-bottom: 1px solid black;
 }
+
