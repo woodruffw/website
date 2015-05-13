@@ -20,7 +20,10 @@
 		may result in IP bans from their respective services. <br>
 		Unless otherwise noted, everything is licensed under the MIT License. <br>
 		Some of these programs are <em>absolutely tiny.</em> They aren't put up here
-		as major projects, but as one-off challenges or quick solutions.
+		as major projects, but as one-off challenges or quick solutions. <br>
+		If a program listed here is <strong>not</strong> entirely original work,
+		it will have an asterisk (*) superscripted next to its name and proper attribution
+		in the description and source.
 	</p>
 
 	<h2>Browse by Language</h2>
@@ -88,7 +91,7 @@
 				<li><a href="#git-https2ssh">git-https2ssh</a></li>
 				<li><a href="#cloud2butt-irc">cloud2butt-irc</a></li>
 				<li><a href="#haiku-critic">haiku-critic</a></li>
-				<li><a href="#xdcc">xdcc</a></li>
+				<li><a href="#xdcc">xdcc<sup>*</sup></a></li>
 			</ul>
 		</li>
 		<li><a href="#Python">Python</a>
@@ -185,8 +188,9 @@
 
 	<h3 id="puushscraper">puush-scraper</h3>
 	<p>
-		Scrapes images and other files off of <a href="http://www.puu.sh">puu.sh</a> using trial-and-error. <br>
+		Scrapes images and other files off of <a href="http://www.puush.me">puush</a> using trial-and-error. <br>
 		Uses MIME headers to detect the correct file extension, defaulting to ".other" if not a text file or common image. <br>
+		<strong>Update:</strong> puush appears to be using a new URL schema, and has been IP banning clients that use this script. I do <strong>not</strong> recommend using it. <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/puush-scraper/puush-scraper.pl">View on GitHub</a>
 	</p>
 
@@ -356,7 +360,7 @@
 	<p>
 		Generates CONTRIBUTORS files for git repositories. <br>
 		Capable of generating Markdown, CSV, and plain text. <br>
-		<a href="https://github.com/woodruffw/git-contrib">View on GitHub</a>
+		<a href="https://github.com/woodruffw/snippets/blob/master/git-contrib/git-contrib.rb">View on GitHub</a>
 	</p>
 
 	<h3 id="grabzit">grabzit-screenshot</h3>
@@ -404,7 +408,7 @@
 		<a href="https://github.com/woodruffw/snippets/blob/master/haiku-critic/haiku-critic.rb">View on GitHub</a>
 	</p>
 
-	<h3 id="xdcc">xdcc</h3>
+	<h3 id="xdcc">xdcc<sup>*</sup></h3>
 	<p>
 		An Cinch XDCC file fetcher, modified from <a href="https://github.com/inket/RubyXDCCGetter">Mahdi Bchetnia's xdcc.rb</a>. <br>
 		Usage: <code>xdcc irc.someserver.net bot_name pack_number -c channel -d directory</code> <br>
