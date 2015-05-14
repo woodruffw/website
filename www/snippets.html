@@ -102,6 +102,7 @@
 		<li><a href="#AWK">AWK</a>
 			<ul>
 				<li><a href="#linecheck">linecheck</a></li>
+				<li><a href="#awkbot"></a>awkbot</li>
 			</ul>
 		</li>
 		<li><a href="#NodeJS">JavaScript (Node)</a>
@@ -411,7 +412,7 @@
 	<h3 id="xdcc">xdcc<sup>*</sup></h3>
 	<p>
 		An Cinch XDCC file fetcher, modified from <a href="https://github.com/inket/RubyXDCCGetter">Mahdi Bchetnia's xdcc.rb</a>. <br>
-		Usage: <code>xdcc irc.someserver.net bot_name pack_number -c channel -d directory</code> <br>
+		Usage: <code>xdcc.rb irc.someserver.net bot_name pack_number -c channel -d directory</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/xdcc/xdcc.rb">View on GitHub</a>
 	</p>
 
@@ -429,6 +430,14 @@
 		Checks each line in each provided file for length. <br>
 		If the length exceeds 80 characters, spits out a warning for that line. <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/linecheck/linecheck.awk">View on GitHub</a>
+	</p>
+	
+	<h3 id="awkbot">awkbot</h3>
+	<p>
+		A tiny IRC bot that shows that (GNU) AWK can be used as a general-purpose language. <br>
+		Currently only responds to <code>.bots</code>, but can be easily extended. <br>
+		Usage: <code>awkbot.awk &lt;nick&gt; &lt;server&gt; &lt;chan1,chan2,...&gt;</code> <br>
+		<a href="https://github.com/woodruffw/snippets/blob/master/awkbot/awkbot.awk">View on GitHub</a>
 	</p>
 
 	<h2 class="udl" id="NodeJS">JavaScript (Node)</h2>
