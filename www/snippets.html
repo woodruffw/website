@@ -92,6 +92,7 @@
 				<li><a href="#cloud2butt-irc">cloud2butt-irc</a></li>
 				<li><a href="#haiku-critic">haiku-critic</a></li>
 				<li><a href="#xdcc">xdcc<sup>*</sup></a></li>
+				<li><a href="#ibip-check">ibip-check</a></li>
 			</ul>
 		</li>
 		<li><a href="#Python">Python</a>
@@ -102,7 +103,7 @@
 		<li><a href="#AWK">AWK</a>
 			<ul>
 				<li><a href="#linecheck">linecheck</a></li>
-				<li><a href="#awkbot"></a>awkbot</li>
+				<li><a href="#awkbot">awkbot</a></li>
 			</ul>
 		</li>
 		<li><a href="#NodeJS">JavaScript (Node)</a>
@@ -397,7 +398,7 @@
 	<p>
 		A tiny Cinch bot that matches messages containing 'cloud' and substitutes all 'cloud's for 'butt's. <br>
 		Inspired by the similar '<a href="https://chrome.google.com/webstore/detail/cloud-to-butt-plus/apmlngnhgbnjpajelfkmabhkfapgnoai?hl=en">Cloud To Butt Plus</a>' Chrome plugin. <br>
-		Usage: <code>cloud2butt-irc.rb irc.someserver.net 'chan1,chan2,...'</code> <br>
+		Usage: <code>cloud2butt-irc.rb irc.someserver.net '#chan1,#chan2,...'</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/cloud2butt-irc/cloud2butt-irc.rb">View on GitHub</a>
 	</p>
 
@@ -405,7 +406,7 @@
 	<p>
 		Another tiny Cinch bot that makes sure every message is in the form of a 5-7-5 haiku. <br>
 		If the message does not match the syntax <code>5 // 7 // 5</code>, the user is kicked. <br>
-		Usage: <code>haiku-critic.rb irc.someserver.net 'chan1,chan2...'</code> <br>
+		Usage: <code>haiku-critic.rb irc.someserver.net '#chan1,#chan2...'</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/haiku-critic/haiku-critic.rb">View on GitHub</a>
 	</p>
 
@@ -414,6 +415,13 @@
 		An Cinch XDCC file fetcher, modified from <a href="https://github.com/inket/RubyXDCCGetter">Mahdi Bchetnia's xdcc.rb</a>. <br>
 		Usage: <code>xdcc.rb irc.someserver.net bot_name pack_number -c channel -d directory</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/xdcc/xdcc.rb">View on GitHub</a>
+	</p>
+	
+	<h3 id="ibip-check">ibip-check</h3>
+	<p>
+		A Cinch bot that scans a channel for <a	href="https://github.com/Teknikode/IBIP">IBIP</a> compliant bots and reports information about them. <br>
+		Usage: <code>ibip-check.rb irc.someserver.net '#channel'</code> <br>
+		<a href="https://github.com/woodruffw/snippets/blob/master/ibip-check/ibip-check.rb">View on GitHub</a>
 	</p>
 
 	<h2 class="udl" id="Python">Python</h2>
