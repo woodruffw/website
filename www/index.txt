@@ -1,0 +1,27 @@
+  _      ___ _____              _      __             __         ______
+ | | /| / (_) / (_)__ ___ _    | | /| / /__  ___  ___/ /_____ __/ _/ _/
+ | |/ |/ / / / / / _ `/  ' \   | |/ |/ / _ \/ _ \/ _  / __/ // / _/ _/ 
+ |__/|__/_/_/_/_/\_,_/_/_/_/   |__/|__/\___/\___/\_,_/_/  \_,_/_//_/   
+                                                                     
+
+HTML sucks.
+If you want the "real" website, check /index.html.
+
+Links:
+
++-----------------------------------------------------+
+| Curriculum Vitae     | /cv.pdf                      |
+| Projects:            | https://github.com/woodruffw |
+| Scripts and snippets | /snippets.html               |
+| Hackathon record:    | /hackathons.html             |
+| Publications         | /publications.html           |
+| Blog                 | http://blog.woodruffw.us     |
++-----------------------------------------------------+
+
+Contact:
+
+william@tuffbizz.com
+woodruffw on irc.freenode.net
+yossarian on irc.rizon.net
+@woodrufw on Twitter
+
