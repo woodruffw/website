@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/yossarian
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://woodruffw.us
+  * I am yossarian (https://keybase.io/yossarian) on keybase.
+  * I have a public key with fingerprint 46C3 9716 A8F0 7E98 384E  28F7 85AE 00C5 0483 3B3C
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "46c39716a8f07e98384e28f785ae00c504833b3c",
+            "host": "keybase.io",
+            "key_id": "85ae00c504833b3c",
+            "kid": "0101130134cee1c842d7d204125f970a45e7eaf21314c30fd5f6c36adc65e74ff63e0a",
+            "uid": "1cc3e03391344775146125d33b6e4d19",
+            "username": "yossarian"
+        },
+        "service": {
+            "hostname": "woodruffw.us",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1432660334,
+    "expire_in": 157680000,
+    "prev": "8bcd071242e9421282167c6b8b11e186ef4a5693cb552161f00d717eb38b73ce",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+yMMvAnicbVJ7TFV1HL8oD2MUykoeOXDHCUyIzu+8Lw+DRJHAnMLNgeDtPH4HjuA5
+h3Pu5fIIzNENJiaPZLCAkIYtBgEjylJbkfgCSqc5V0rmbLNaKdJipRL9DrP/+v3z
+2/f7eXwf+048udwW6OMdsp3xrUtK9pkaT3PbHFK/Wo0JmlSJJVZjJXDpkxW1CBq6
+oaguLBGjGJG0s4DhORlnoZ0jOQoSnMxyNA9xXKRxiiNJgRSxeKxYMy0FshF4EyYo
+GsqhwKlIKPs//JIlAAc4ACQOSEqEEIgcRUisROAUIGjZzuI8RUMW8jIBSECJJC5L
+tIxaYnhJZBBCyTJDQpxHdu4lOyCKKCZJOzKkWJYGFIOcJFSTgZQE7BbRhIbK74OI
+XamZJm8ovIrVxGMoXa6I0NqBNcpjikfTJMMty54Et4nEuqG5NFErRUixy6UnWkJX
+pb7EhILzsYdTUFQJ7REJyqFhKpqKJQLEFF2KZQookmAY1CUVj8EKXTGgU7EYNMtw
+OHpWGVhubU0QJZwFBEVAO0UAgiMAw4qMwAkAQMAxUKZ4mrGTokDTCAIyjkssYKFA
+cgJLolmsqcpUDUtElVx8EbI0lSKVd7kNiNV8NV7ga/MJtPn7LbMuwRb4xMr/7mOw
+JXhhze60k/lZkcNzbNiFiMKbBRdL8vkP2u+ddeX98EYSx1c1y5xf85tXoxdPGL25
+ObP3nOVZk/XOjT3z4PnQwXDHYPSrAePmyqu1U9OZtjI8r/HHK/U7fc7fzU+Kyn7m
+xvxPX8TefrAt7NRdrStuQ/T8t4f3rNapk462Fbueot++07w16t2G0yNdzc82VuKl
+Le/Uz/tG912KHP1uVd6LZRNRI3URZ4b29t1y/OZon+4oTt3bqw2kL8vdcq13gH3Z
+Xatf6JSebpaNtX/XhvqPL0+be3//9tjq1pAg59wd0/lSpppRfNqT2hg0t7iOu1bc
+1H/M09D/5Tk9/RBen/DKjqyciQPdtzi7fDRETPm6bHeKGTH2j6dRjnht5vbsmriC
+o92TQSFVWw9hoXFnPxY7dxSphxv2tNPBD7IxLGxnemhg+MZHD1NeCAj05nS0CYvr
+14fdb6qLuv7Hlm+8HTPnj4+vaLl85ZeAI4/CjYmZ1zsy2i6tXushsyePBDQwcRUX
+133v3Vfyua7fj2FKsiJ/7vKrGf1kNjgrRu/xujLd+eX+QfBY7HBh61A02PzejclN
+16NGqqtyMxzu/tSBIPa50eMfJdnHFtLgKb3v3EFb5/6F3NYPP22KeWvwr9Q/g3ts
+l5OFoYebbs50+09ObeBLk80TAWNJMQd/HS7cPjv9WUNFzeZFbx848HtY565/AfIf
+l/U=
+=mTJE
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/yossarian
+
+==================================================================
+
