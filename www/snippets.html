@@ -124,6 +124,7 @@
 	<p>
 		Provides functions for validating (or generating) Luhn-10 valid integer strings. <br>
 		Useful for validating credit card numbers. <br>
+		Usage: Edit <code>Luhn.java</code>. <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/Luhn/Luhn.java">View on GitHub</a>
 	</p>
 
@@ -132,6 +133,7 @@
 	<p>
 		Fetches data from FCPool's JSON API given a user's API key. <br>
 		Reads the API key from either a file or the command line. <br>
+		<strong>Update:</strong> This service appears to be shut down. <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/fcpool-api-fetch/fcpool-api-fetch.pl">View on GitHub</a>
 	</p>
 
@@ -139,6 +141,7 @@
 	<p>
 		Fetches data from ftc.d2.cc's JSON API given a user's API key. <br>
 		Functions similarly to fcpool-api-fetch, but uses HTTPS. <br>
+		<strong>Update:</strong> This service appears to be shut down. <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/d2pool-api-fetch/d2pool-api-fetch.pl">View on GitHub</a>
 	</p>
 
@@ -146,39 +149,47 @@
 	<p>
 		Uses Urban Dictionary's API to find definitions matching the query word. <br>
 		Inspired by NetBSD's 'wtf' acronym-expanding script. <a href="https://github.com/woodruffw/WebService-UrbanDictionary">Now a full Perl module!</a> <br>
+		Usage: <code>wtf-urban.pl &lt;word&gt; [-l number]</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/wtf-urban/wtf-urban.pl">View on GitHub</a>
 	</p>
 
 	<h3 id="grayscale">grayscale</h3>
 	<p>
 		Grayscales a given image and stores it as "grayscale.png," all using ImageMagick. <br>
+		Usage: <code>grayscale.pl &lt;image&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/grayscale/grayscale.pl">View on GitHub</a>
 	</p>
 
 	<h3 id="randomimage">randomimage</h3>
 	<p>
 		Generates a pseudorandom image using perl's <code>rand()</code> and ImageMagick. <br>
+		If dimensions are not provided, a 500x500 image is generated. <br>
+		Usage: <code>randomimage.pl [WIDTHxHEIGHT]</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/randomimage/randomimage.pl">View on GitHub</a>
 	</p>
 
 	<h3 id="attendance">nycdoe-fetch-attendance</h3>
 	<p>
 		Checks the NYC DOE XML API for daily attendance statistics for a given school. <br>
+		<strong>Update:</strong> This service appears to be shut down. <br>
+		Usage: <code>nycdoe-fetch-attendance.pl &lt;"school name" | DBN&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/nycdoe-fetch-attendance/nycdoe-fetch-attendance.pl">View on GitHub</a>
 	</p>
 
 	<h3 id="mkqrcode">mk-qrcode</h3>
 	<p>
 		Generates a QR code image based upon textual user input. <br>
-		Uses <a href="http://search.cpan.org/~kurihara/Imager-QRCode/lib/Imager/QRCode.pm"><code>Imager::QRCode</code></a>. <br>
+		Uses <a href="http://search.cpan.org/~kurihara/Imager-QRCode/lib/Imager/QRCode.pm">Imager::QRCode</a>. <br>
+		Usage: <code>mk-qrcode.pl &lt;module size&gt; &lt;text&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/mk-qrcode/mk-qrcode.pl">View on GitHub</a>
 	</p>
 
 	<h3 id="twitterfb">twitter-fortune-bot</h3>
 	<p>
 		Uses the <a href="https://dev.twitter.com/rest/public">Twitter REST API (1.1)</a> to tweet fortunes from the "fortune" utility. <br>
-		<strong>Important: </strong>You must add your own application/API keys. <br>
+		<strong>Important: </strong>You must add your own application/API keys to your environment. <br>
 		For an example, see <a href="https://twitter.com/robot_fortune">robot_fortune on Twitter.</a> <br>
+		Usage: <code>twitter-fortune-bot.pl</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/twitter-fortune-bot/twitter-fortune-bot.pl">View on GitHub</a>
 	</p>
 
@@ -186,6 +197,7 @@
 	<p>
 		Converts magnet links to torrent files using <a href="http://www.magnet2torrent.com">magnet2torrent.com</a>. <br>
 		<strong>Important:</strong> Bulk transactions through this script may not be appreciated by magnet2torrent's owners. <br>
+		Usage: <code>magnet-to-torrent.pl &lt;'magnet link'&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/magnet-to-torrent/magnet-to-torrent.pl">View on GitHub</a>
 	</p>
 
@@ -193,7 +205,8 @@
 	<p>
 		Scrapes images and other files off of <a href="http://www.puush.me">puush</a> using trial-and-error. <br>
 		Uses MIME headers to detect the correct file extension, defaulting to ".other" if not a text file or common image. <br>
-		<strong>Update:</strong> puush appears to be using a new URL schema, and has been IP banning clients that use this script. I do <strong>not</strong> recommend using it. <br>
+		<strong>Update:</strong> puush appears to be using a new URL schema, and has been IP banning clients that use this script. <br>
+		Usage: <code>puush-scraper.pl &lt;number of files&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/puush-scraper/puush-scraper.pl">View on GitHub</a>
 	</p>
 
@@ -201,6 +214,7 @@
 	<p>
 		Fetches PDFs of previous mathematics finals for the given course from <a href="http://db.math.umd.edu/testbank/">UMD's MathNet Test Bank</a>. <br>
 		Capable of grabbing finals from MATH, AMSC, and STAT courses. <br>
+		Usage: <code>fetch-math-finals.pl &lt;course code&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/fetch-math-finals/fetch-math-finals.pl">View on GitHub</a>
 	</p>
 
@@ -208,21 +222,22 @@
 	<p>
 		A HexChat plugin that interfaces with gmusicbrowser via DBus. <br>
 		Grabs information about the current song and <code>ACTION</code>s it to the channel. <br>
-		Requires <a href="http://search.cpan.org/~danberr/Net-DBus-1.0.0/lib/Net/DBus.pm"><code>Net::DBus</code></a>. <br>
+		Requires <a href="http://search.cpan.org/~danberr/Net-DBus-1.0.0/lib/Net/DBus.pm">Net::DBus</a>. <br>
+		Usage: <code>/gmb-nowplaying</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/hexchat-gmb-nowplaying/hexchat-gmb-nowplaying.pl">View on GitHub</a>
 	</p>
 
 	<h3 id="hexchat-rainbow">hexchat-rainbow</h3>
 	<p>
 		A HexChat plugin that rainbowifies text. <br>
-		Syntax: <code>/rb text</code> <br>
+		Usage: <code>/rb &lt;text&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/hexchat-rainbow/hexchat-rainbow.pl">View on GitHub</a>
 	</p>
 
 	<h3 id="hexchat-homoglyph">hexchat-homoglyph</h3>
 	<p>
 		A HexChat plugin that converts text into visually similar homoglyphs. <br>
-		Syntax: <code>/hg text</code> <br>
+		Usage: <code>/hg &lt;text&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/hexchat-homoglyph/hexchat-homoglyph.pl">View on GitHub</a>
 	</p>
 
@@ -230,18 +245,22 @@
 	<h3 id="rot13">rot13</h3>
 	<p>
 		A tiny C99 implementation of the ROT13 Caesarian cipher. <br>
+		Reads text from standard input. <br>
+		Usage: <code>rot13</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/rot13/rot13.c">View on GitHub</a>
 	</p>
 
 	<h3 id="mersenne">mersenne</h3>
 	<p>
 		A C99 implementation of the "Mersenne Twist" pseudorandom number generator. <br>
+		Usage: Edit <code>mersenne.c</code>. <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/mersenne/mersenne.c">View on GitHub</a>
 	</p>
 
 	<h3 id="mesg">mesg</h3>
 	<p>
 		A quick and dirty popup box for Batch scripts on Windows. <br>
+		Usage: <code>mesg.exe &lt;message&gt; [title]</code>. <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/mesg/mesg.c">View on GitHub</a>
 	</p>
 
@@ -249,19 +268,22 @@
 	<p>
 		A small utility for obtaining the permission bits of a file on Linux/Unix systems. <br>
 		Outputs both standard string notation (i.e. 'rwxrwxrwx') and octal notation (i.e. '755'). <br>
+		Usage: <code>perm &lt;-s|-n &lt;file&gt;&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/perm/perm.c">View on GitHub</a>
 	</p>
 
 	<h3 id="battstat">battstat</h3>
 	<p>
 		Outputs system battery information obtained through sysfs. <br>
+		Usage: <code>battstat</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/battstat/battstat.c">View on GitHub</a>
 	</p>
 
 	<h3 id="cond">cond</h3>
 	<p>
 		A dumb conditional checker that makes asking for user confirmation simple. <br>
-		Example usage: <code>if cond "Continue?" ; then echo "Continuing..." ; fi</code> <br>
+		Usage: <code>cond [message]</code> <br>
+		Example: <code>if cond "Continue?" ; then echo "Continuing..." ; fi</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/cond/cond.c">View on GitHub</a>
 	</p>
 
@@ -269,6 +291,7 @@
 	<p>
 		A minor nuisance, copied from the (discontinued) nuisances project. <br>
 		Ejects disks (or just opens the drive) randomly and repeatedly. Relies on the Windows API. <br>
+		Usage: <code>eject.exe</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/eject/eject.c">View on GitHub</a>
 	</p>
 
@@ -276,6 +299,7 @@
 	<p>
 		A minor nuisance, copied from the (discontinued) nuisances project. <br>
 		Randomly activates various control and modifier keys repeatedly. Relies on the Windows API. <br>
+		Usage: <code>locks.exe</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/locks/locks.c">View on GitHub</a>
 	</p>
 
@@ -283,6 +307,7 @@
 	<p>
 		A small C program that converts <a href="https://en.wikipedia.org/wiki/Brainfuck">Brainfuck</a> source files into C source files. <br>
 		Uses a 30,000 byte stack, like the original implementation. <br>
+		Usage: <code>bf &lt;input.bf&gt; &lt;output.c&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/bf/bf.c">View on GitHub</a>
 	</p>
 
@@ -290,7 +315,7 @@
 	<p>
 		A tiny screenshot program. <br>
 		Uses <code>Xlib</code> to dump the screen and <code>libpng</code> to save it as a PNG. <br>
-		Usage: <code>tss myscreenshot.png</code> <br>
+		Usage: <code>tss &lt;output.png&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/tss/tss.c">View on GitHub</a>
 	</p>
 
@@ -299,6 +324,7 @@
 	<p>
 		Plays Netflix in an application separate from a standard web browser for performance. <br>
 		Released into the public domain. <br>
+		Usage: <code>NetflixPlayer.exe</code> <br>
 		<a href="https://github.com/woodruffw/snippets/tree/master/Netflix%20Player">View on GitHub</a>
 	</p>
 
@@ -306,18 +332,21 @@
 	<h3 id="collapse">collapse</h3>
 	<p>
 		Collapses the given directory into its parent directory. <br>
+		Usage: <code>collapse.sh &lt;directory&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/collapse/collapse.sh">View on GitHub</a>
 	</p>
 
 	<h3 id="robot-ftp">robot-ftp</h3>
 	<p>
 		Crawls a given list of IPs, FTPing into them and leaving a message. <br>
+		Usage: <code>robot-ftp.sh &lt;IP file&gt; &lt;message file&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/robot-ftp/robot-ftp.sh">View on GitHub</a>
 	</p>
 
 	<h3 id="readqrcode">read-qrcode</h3>
 	<p>
 		Reads the provided QR image, outputting its comments. <br>
+		Usage: <code>read-qrcode.sh &lt;image&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/read-qrcode/read-qrcode.sh">View on GitHub</a>
 	</p>
 
@@ -325,6 +354,7 @@
 	<p>
 		A set of aliases for common git SCM commands. <br>
 		To install, either copy the <code>git-aliases</code> file into your shell's profile or include it with a command like <code>source /path/to/git-aliases</code>. <br>
+		Usage: Call any of the aliases. <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/git-aliases/git-aliases">View on GitHub</a>
 	</p>
 
@@ -332,6 +362,7 @@
 	<p>
 		A minor nuisance, copied from the (discontinued) nuisances project. <br>
 		Messes with the user's <code>$PATH</code>, placing fake programs or wiping the <code>$PATH</code> altogether. <br>
+		Usage: <code>pathconfusion.sh</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/pathconfusion/pathconfusion.sh">View on GitHub</a>
 	</p>
 
@@ -339,14 +370,16 @@
 	<p>
 		Generate a skeleton C file containing a main function and some common includes. <br>
 		Not very useful, except for quickly testing an idea. <br>
-		Usage: <code>vim `cskel test` # opens test.c in vim</code>. <br>
+		Usage: <code>cskel.sh [filename]</code> <br>
+		Example: <code>vim `cskel.sh test` # opens test.c in vim</code>. <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/cskel/cskel.sh">View on GitHub</a>
 	</p>
 
 	<h3 id="jskel">jskel</h3>
 	<p>
 		<a href="#cskel"><code>cskel</code></a>, but for Java skeleton files. <br>
-		Usage: <code>vim `jskel test` # opens test.java in vim</code>. <br>
+		Usage: <code>jskel.sh [filename]</code> <br>
+		Example: <code>vim `jskel.sh test` # opens test.java in vim</code>. <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/jskel/jskel.sh">View on GitHub</a>
 	</p>
 
@@ -354,7 +387,8 @@
 	<p>
 		A tiny script for posting files/standard input on <a href="http://hastebin.com">Hastebin.</a> <br>
 		Lighter than <a href="https://github.com/seejohnrun/haste-client">haste-client</a>, and more versatile than its recommended shell alternative. <br>
-		Usage: <code>my_program | haste # or haste myfile</code>. <br>
+		Usage: <code>haste.sh [file]</code> <br>
+		Example: <code>my_program | haste.sh # or haste.sh myfile</code>. <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/haste/haste.sh">View on GitHub</a>
 	</p>
 
@@ -363,6 +397,7 @@
 	<p>
 		Generates CONTRIBUTORS files for git repositories. <br>
 		Capable of generating Markdown, CSV, and plain text. <br>
+		Usage: <code>git-contrib.rb [--markdown | --csv]</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/git-contrib/git-contrib.rb">View on GitHub</a>
 	</p>
 
@@ -371,6 +406,7 @@
 		Takes a screenshot of a given website and saves it to the given file. <br>
 		Uses <a href="http://grabz.it/">Grabzit's API</a> to do so. <br>
 		<em>Spoiler:</em> Grabzit's API sucks and only takes thumbnails without a paid account. Don't use it. <br>
+		Usage: <code>grabzit-screenshot.rb &lt;url&gt; &lt;file&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/grabzit-screenshot/grabzit-screenshot.rb">View on GitHub</a>
 	</p>
 
@@ -379,12 +415,14 @@
 		A dumb Sinatra-based server that listens for repo release callbacks from GitHub. <br>
 		Upon receiving an (authenticated) post, sends a digest to twitter. <br>
 		For an example, see <a href="https://twitter.com/woodrufw">woodrufw on Twitter.</a> <br>
+		Usage: <code>twitter-github-bot.rb</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/twitter-github-bot/twitter-github-bot.rb">View on GitHub</a>
 	</p>
 
 	<h3 id="smtp-spoof-ruby">smtp-spoof-ruby</h3>
 	<p>
 		A line-by-line translation of the <a href="#smtp-spoof">smtp-spoof</a> Python script. <br>
+		Usage: <code>smtp-spoof-ruby.rb</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/smtp-spoof-ruby/smtp-spoof-ruby.rb">View on GitHub</a>
 	</p>
 
@@ -392,6 +430,7 @@
 	<p>
 		An awful script that haphazardly converts HTTPS remotes in git repositories into SSH remotes. <br>
 		Only works half the time, and isn't very smart. Don't use it. <br>
+		Usage: <code>git-https2ssh.rb</code>
 		<a href="https://github.com/woodruffw/snippets/blob/master/git-https2ssh/git-https2ssh.rb">View on GitHub</a>
 	</p>
 
@@ -399,7 +438,7 @@
 	<p>
 		A tiny Cinch bot that matches messages containing 'cloud' and substitutes all 'cloud's for 'butt's. <br>
 		Inspired by the similar '<a href="https://chrome.google.com/webstore/detail/cloud-to-butt-plus/apmlngnhgbnjpajelfkmabhkfapgnoai?hl=en">Cloud To Butt Plus</a>' Chrome plugin. <br>
-		Usage: <code>cloud2butt-irc.rb irc.someserver.net '#chan1,#chan2,...'</code> <br>
+		Usage: <code>cloud2butt-irc.rb &lt;irc.someserver.net&gt; &lt;'#chan1,#chan2,...'&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/cloud2butt-irc/cloud2butt-irc.rb">View on GitHub</a>
 	</p>
 
@@ -407,21 +446,21 @@
 	<p>
 		Another tiny Cinch bot that makes sure every message is in the form of a 5-7-5 haiku. <br>
 		If the message does not match the syntax <code>5 // 7 // 5</code>, the user is kicked. <br>
-		Usage: <code>haiku-critic.rb irc.someserver.net '#chan1,#chan2...'</code> <br>
+		Usage: <code>haiku-critic.rb &lt;irc.someserver.net&gt; &lt;'#chan1,#chan2...'&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/haiku-critic/haiku-critic.rb">View on GitHub</a>
 	</p>
 
 	<h3 id="xdcc">xdcc<sup>*</sup></h3>
 	<p>
 		An Cinch XDCC file fetcher, modified from <a href="https://github.com/inket/RubyXDCCGetter">Mahdi Bchetnia's xdcc.rb</a>. <br>
-		Usage: <code>xdcc.rb irc.someserver.net bot_name pack_number -c channel -d directory</code> <br>
+		Usage: <code>xdcc.rb &lt;irc.someserver.net&gt; &lt;bot_name&gt; &lt;pack_number&gt; [-c channel] [-d directory]</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/xdcc/xdcc.rb">View on GitHub</a>
 	</p>
 	
 	<h3 id="ibip-check">ibip-check</h3>
 	<p>
 		A Cinch bot that scans a channel for <a	href="https://github.com/Teknikode/IBIP">IBIP</a> compliant bots and reports information about them. <br>
-		Usage: <code>ibip-check.rb irc.someserver.net '#channel'</code> <br>
+		Usage: <code>ibip-check.rb &lt;irc.someserver.net&gt; &lt;'#channel'&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/ibip-check/ibip-check.rb">View on GitHub</a>
 	</p>
 
@@ -438,6 +477,7 @@
 	<p>
 		Spoofs SMTP transactions with raw sockets. <br>
 		Allows the user to send email from any address (but not any IP). <br>
+		Usage: <code>smtp-spoof.py</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/smtp-spoof/smtp-spoof.py">View on GitHub</a>
 	</p>
 
@@ -446,6 +486,7 @@
 	<p>
 		Checks each line in each provided file for length. <br>
 		If the length exceeds 80 characters, spits out a warning for that line. <br>
+		Usage: <code>linecheck.awk &lt;file1 file2 ...&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/linecheck/linecheck.awk">View on GitHub</a>
 	</p>
 	
@@ -462,6 +503,7 @@
 	<p>
 		Takes a screenshot of a given website and saves it to the given file. <br>
 		Uses <a href="https://github.com/brenden/node-webshot">node-webshot</a> to do so. <br>
+		Usage: <code>webshot-screenshot.js &lt;url&gt; &lt;file&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/webshot-screenshot/webshot-screenshot.js">View on GitHub</a>
 	</p>
 
@@ -470,6 +512,7 @@
 	<p>
 		A basic property list file for using launchd on Homebrew's Samba formula. <br>
 		Now merged with the actual Samba formula, and therefore no longer needed in stand-alone form. <br>
+		Usage: Install <code>homebrew.mxcl.smbd.plist</code> to a directory watched by launchd. <br>
 		<a href="https://github.com/woodruffw/homebrew.mxcl.smbd">View on GitHub</a>
 	</p>
 </body>
