@@ -1,5 +1,5 @@
 body {
-	font-family: "Courier New", Courier, monospace;
+	font-family: "Terminus", "Courier New", Courier;
 	font-size: 10pt;
 }
 
@@ -16,25 +16,3 @@ hr {
 .udl {
 	border-bottom: 1px solid black;
 }
-
-.left {
-	width: 33.33%;
-	height: 250px;
-	float: left;
-	border-bottom: 1px solid black;
-}
-
-.middle {
-	width: 33.33%;
-	height: 250px;
-	float: left;
-	border-bottom: 1px solid black;
-}
-
-.right {
-	width: 33.33%;
-	height: 250px;
-	float: left;
-	border-bottom: 1px solid black;
-}
-
