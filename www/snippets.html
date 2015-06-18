@@ -63,6 +63,7 @@
 				<li><a href="#locks">locks</a></li>
 				<li><a href="#bf">bf</a></li>
 				<li><a href="#tss">tss</a></li>
+				<li><a href="#mntinfo">mntinfo</a></li>
 			</ul>
 		</li>
 		<li><a href="#CS">C#</a>
@@ -93,7 +94,7 @@
 				<li><a href="#git-https2ssh">git-https2ssh</a></li>
 				<li><a href="#cloud2butt-irc">cloud2butt-irc</a></li>
 				<li><a href="#haiku-critic">haiku-critic</a></li>
-				<li><a href="#xdcc">xdcc<sup>*</sup></a></li>
+				<li><a href="#xdcc">xdcc</a><sup>*</sup></li>
 				<li><a href="#ibip-check">ibip-check</a></li>
 				<li><a href="#phishbot">phishbot</a></li>
 			</ul>
@@ -321,6 +322,15 @@
 		Uses <code>Xlib</code> to dump the screen and <code>libpng</code> to save it as a PNG. <br>
 		Usage: <code>tss &lt;output.png&gt;</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/tss/tss.c">View on GitHub</a>
+	</p>
+
+	<h3 id="mntinfo">mntinfo</h3>
+	<p>
+		Gets information about the given filesystem from <code>/etc/mtab</code> and <code>statvfs(3)</code>. <br>
+		The output is formatted to ease parsing with <code>grep</code> and <code>awk</code>. <br>
+		Usage: <code>mntinfo &lt;fs name&gt;</code> <br>
+		Example: <code>mntinfo /dev/sda1 | grep 'f_bsize' | awk '{ print $2 }'</code> <br>
+		<a href="https://github.com/woodruffw/snippets/blob/master/mntinfo/mntinfo.c">View on GitHub</a>
 	</p>
 
 	<h2 class="udl" id="CS">C# (.NET)</h2>

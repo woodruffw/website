@@ -1,18 +1,36 @@
-body {
-	font-family: "Terminus", "Courier New", Courier;
-	font-size: 10pt;
-}
+/* thanks tso */
 
 hr {
-	display: block;
-	margin-before: 0.5em;
-	margin-after: 0.5em;
-	margin-start: auto;
-	margin-end: auto;
-	border-style: inset;
+	border-style: ridge;
 	border-width: 1px;
+	display: block;
 }
 
 .udl {
 	border-bottom: 1px solid black;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Terminus", "Courier New", Courier;
+	font-size: 10.5pt;
+	text-align: justify;
+	hyphens: auto;
+	margin: auto;
+	padding: 1em;
+	max-width: 50em;
+	box-shadow: 0 0 100px #eee;
+	color: #333;
+}
+
+a {
+	-moz-text-decoration-style: wavy;
+	color: #0000BB;
+}
+
+a:hover {
+	-moz-text-decoration-style: dotted;
 }
