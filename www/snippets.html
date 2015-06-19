@@ -97,6 +97,8 @@
 				<li><a href="#xdcc">xdcc</a><sup>*</sup></li>
 				<li><a href="#ibip-check">ibip-check</a></li>
 				<li><a href="#phishbot">phishbot</a></li>
+				<li><a href="#socketdump">socketdump</a></li>
+				<li><a href="#socketslurp">socketslurp</a></li>
 			</ul>
 		</li>
 		<li><a href="#Python">Python</a>
@@ -482,7 +484,7 @@
 
 	<h3 id="xdcc">xdcc<sup>*</sup></h3>
 	<p>
-		An Cinch XDCC file fetcher, modified from <a href="https://github.com/inket/RubyXDCCGetter">Mahdi Bchetnia's xdcc.rb</a>. <br>
+		An Cinch XDCC file fetcher, modified from <a href="https://github.com/inket/RubyXDCCGetter">Mahdi Bchetnia's <code>xdcc.rb</code></a>. <br>
 		Usage: <code>xdcc.rb &lt;irc.someserver.net&gt; &lt;bot_name&gt; &lt;pack_number&gt; [-c channel] [-d directory]</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/xdcc/xdcc.rb">View on GitHub</a>
 	</p>
@@ -500,6 +502,24 @@
 		When messaged privately, each bot reports the contents of the message back to a designated channel. <br>
 		Usage: <code>run.sh # should be edited to change server/channels</code> <br>
 		<a href="https://github.com/woodruffw/snippets/blob/master/phishbot/phishbot.rb">View on GitHub</a>
+	</p>
+
+	<h3 id="socketdump">socketdump</h3>
+	<p>
+		Dumps a file into a socket, base64 encoded and headed by a hash and name. <br>
+		Useful for quickly shooting data between two machines. <br>
+		Complemented by <a href="#socketslurp"><code>socketslurp.rb</code></a>. <br>
+		Usage: <code>socketdump.rb &lt;port&gt; &lt;file&gt;</code> <br>
+		<a href="https://github.com/woodruffw/snippets/blob/master/socketdump/socketdump.rb">View on GitHub</a>
+	</p>
+
+	<h3 id="socketslurp">socketslurp</h3>
+	<p>
+		Reads a base64 encoded file from a socket, validating it using a SHA1 hash. <br>
+		Useful for quickly shooting data between two machines. <br>
+		Complemented by <a href="#socketdump"><code>socketdump.rb</code></a>. <br>
+		Usage: <code>socketslurp.rb &lt;hostname&gt; &lt;port&gt;</code> <br>
+		<a href="https://github.com/woodruffw/snippets/blob/master/socketslurp/socketslurp.rb">View on GitHub</a>
 	</p>
 
 	<h2 class="udl" id="Python">Python</h2>
