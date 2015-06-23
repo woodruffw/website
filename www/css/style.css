@@ -1,5 +1,10 @@
 /* thanks tso */
 
+@font-face {
+	font-family: "Terminus-ttf";
+	src: url("http://woodruffw.us/res/font/terminus.ttf") format("truetype");
+}
+
 hr {
 	border-style: ridge;
 	border-width: 1px;
@@ -15,7 +20,7 @@ hr {
 }
 
 body {
-	font-family: "Terminus", "Courier New", Courier;
+	font-family: "Terminus", "Terminus-ttf", Courier;
 	font-size: 10.5pt;
 	text-align: justify;
 	hyphens: auto;
